@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<title>About &amp; Committee — KMSS</title>
+<meta name="description" content="Who KMSS is, the committee running it this year, answers to common questions, and how to get in touch or join.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f9b8e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+  document.documentElement.classList.add("js");
+  try { var m = localStorage.getItem("kmss-theme"); if (m && m !== "system") document.documentElement.setAttribute("data-theme", m);
+        var l = localStorage.getItem("kmss-lang"); if (l) { document.documentElement.lang = l; document.documentElement.dir = l === "ar" ? "rtl" : "ltr"; } } catch (e) {}
+</script>
+</head>
+<body data-page="about">
+<a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+<header id="site-nav"></header>
+
+<main id="main">
+  <section class="section section--sand" style="padding-block:clamp(48px,7vw,80px) 40px">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="about.teamEyebrow">The committee</span>
+      <h1 data-i18n="about.title">About KMSS</h1>
+      <p class="lede" style="margin-top:14px;max-width:62ch" data-site="intro"></p>
+    </div>
+  </section>
+
+  <!-- ============================== STORY ============================= -->
+  <section class="section" style="padding-block:48px">
+    <div class="wrap">
+      <div class="grid reveal" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:44px;align-items:start">
+        <div>
+          <h2 data-i18n="about.storyTitle">Why we exist</h2>
+        </div>
+        <div class="stack">
+          <p class="lede">Moving 12,000 kilometres to study is not just an academic decision — it is a logistical, financial and emotional one. KMSS exists so that no Kuwaiti student in Melbourne has to work all of that out alone.</p>
+          <p class="lede">We started as a group chat of a handful of students helping each other find housing. Today we run a full calendar of events, keep a living guide to the city, and represent Kuwaiti students to universities and the Cultural Office.</p>
+          <p class="lede">Every committee member is a volunteer and a full-time student. Everything we run is funded by ticket sales at cost and by sponsors who genuinely serve students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ COMMITTEE =========================== -->
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow" style="justify-content:center" data-i18n="about.teamEyebrow">The committee</span>
+        <h2 data-i18n="about.teamTitle">Who's running things</h2>
+        <p class="lede"><span id="team-year"></span></p>
+      </div>
+      <div class="people" id="team"></div>
+    </div>
+  </section>
+
+  <!-- ================================ FAQ ============================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow" style="justify-content:center" data-i18n="about.faqEyebrow">Questions</span>
+        <h2 data-i18n="about.faqTitle">Frequently asked</h2>
+      </div>
+      <div class="faq" id="faq"></div>
+    </div>
+  </section>
+
+  <!-- ============================== JOIN ============================== -->
+  <section class="section section--tint" id="join">
+    <div class="wrap">
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:start">
+        <div>
+          <span class="eyebrow" data-i18n="nav.join">Join us</span>
+          <h2 data-i18n="join.title">Join KMSS — it's free</h2>
+          <p class="lede" style="margin-top:14px" data-i18n="join.lede"></p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+            <a class="btn btn--primary" data-join-link target="_blank" rel="noopener" href="#" data-i18n="join.cta">Join the society</a>
+            <a class="btn btn--ghost" data-wa-link target="_blank" rel="noopener" href="#" data-i18n="join.wa">WhatsApp group</a>
+          </div>
+          <form class="joinform hide" id="join-form" method="post">
+            <label class="field">
+              <input type="email" name="email" required data-i18n-attr="placeholder:join.email" placeholder="Your email address">
+            </label>
+            <button class="btn btn--primary" type="submit" data-i18n="join.send">Sign up</button>
+          </form>
+        </div>
+
+        <div id="contact" style="scroll-margin-top:calc(var(--nav-h) + 24px)">
+          <h2 data-i18n="about.contactTitle">Get in touch</h2>
+          <div class="deets" style="margin-top:20px">
+            <div class="deet" id="contact-email"></div>
+          </div>
+          <p class="form-note" style="margin-top:18px">
+            Media enquiries, sponsorship, corrections to the Melbourne Guide, or just a question about studying here — we read everything.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages.js"></script>
+<script>
+  // Contact details come from data/site.json
+  document.addEventListener('kmss:ready', function () {
+    var c = (KMSS.state.site || {}).contact || {};
+    var host = document.getElementById('contact-email');
+    if (!host) return;
+    host.innerHTML = KMSS.I.mail + '<div><b>Email</b><a href="mailto:' + KMSS.esc(c.email || '') + '">' + KMSS.esc(c.email || '') + '</a></div>';
+  });
+</script>
+</body>
+</html>

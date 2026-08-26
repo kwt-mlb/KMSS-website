@@ -1,0 +1,75 @@
+{
+  "_readme": "Society-wide settings. Edit the values on the right of each colon. Keep the quotes and commas. See docs/HOW-TO-EDIT.md",
+
+  "name":       { "en": "KMSS", "ar": "KMSS" },
+  "fullName":   { "en": "Kuwaiti Melbourne Students Society", "ar": "الجمعية الكويتية لطلبة ملبورن" },
+  "tagline":    { "en": "Your home away from home in Melbourne", "ar": "بيتك الثاني في ملبورن" },
+  "foundedYear": 2019,
+  "city":       { "en": "Melbourne, Australia", "ar": "ملبورن، أستراليا" },
+
+  "intro": {
+    "en": "KMSS brings Kuwaiti students in Melbourne together — through events, support and a community that has your back from the day you land to the day you graduate.",
+    "ar": "الجمعية الكويتية لطلبة ملبورن تجمع الطلبة الكويتيين في ملبورن من خلال الفعاليات والدعم ومجتمع يقف معك من أول يوم توصل فيه لين يوم تخرجك."
+  },
+
+  "stats": [
+    { "value": "400+", "label": { "en": "Members",           "ar": "عضو" } },
+    { "value": "60+",  "label": { "en": "Events run",        "ar": "فعالية" } },
+    { "value": "8",    "label": { "en": "Partner universities", "ar": "جامعة شريكة" } },
+    { "value": "2019", "label": { "en": "Founded",           "ar": "تأسست" } }
+  ],
+
+  "_pillarsReadme": "The four boxes on the homepage under 'What we do'. Change the emoji, title and text freely.",
+  "pillars": [
+    {
+      "icon": "🤝",
+      "title": { "en": "Land softly", "ar": "وصول سهل" },
+      "text": { "en": "We meet new students at the airport, help with SIMs, banks and housing, and make sure nobody's first month in Melbourne is spent alone in an empty apartment.", "ar": "نستقبل الطلبة الجدد بالمطار، ونساعد بالشرايح والبنوك والسكن، ونتأكد إن ما أحد يقضي أول شهر له بملبورن لحاله بشقة فاضية." }
+    },
+    {
+      "icon": "🎉",
+      "title": { "en": "Events all year", "ar": "فعاليات طول السنة" },
+      "text": { "en": "National Day, iftars, football cups, road trips and graduation dinners — something on the calendar every few weeks, not just once a semester.", "ar": "العيد الوطني، وإفطارات، وبطولات كورة، ورحلات، وعشاء التخرج — فيه شي بالتقويم كل كم أسبوع، مو بس مرة بالترم." }
+    },
+    {
+      "icon": "📚",
+      "title": { "en": "Academic backup", "ar": "دعم أكاديمي" },
+      "text": { "en": "Study jams before exams, seniors who've taken your subjects, and help writing the letters and forms the Cultural Office asks for.", "ar": "جلسات مذاكرة قبل الاختبارات، وطلبة سبقوك بنفس المواد، ومساعدة بكتابة الخطابات والنماذج اللي يطلبها المكتب الثقافي." }
+    },
+    {
+      "icon": "🗣️",
+      "title": { "en": "One voice", "ar": "صوت واحد" },
+      "text": { "en": "We represent Kuwaiti students to universities, the Cultural Office and the wider community — so problems get raised by a society, not by one worried student.", "ar": "نمثل الطلبة الكويتيين عند الجامعات والمكتب الثقافي والمجتمع — عشان المشاكل تنرفع باسم جمعية، مو باسم طالب واحد قلقان." }
+    }
+  ],
+
+  "contact": {
+    "email": "hello@kmss.org.au",
+    "instagram": "https://instagram.com/kmss.melb",
+    "whatsapp": "https://chat.whatsapp.com/REPLACE-WITH-YOUR-INVITE",
+    "x": "",
+    "tiktok": "",
+    "linkedin": "",
+    "youtube": ""
+  },
+
+  "_sellfyReadme": "Tickets are sold on Sellfy. Put your Sellfy store URL here, then give each event its own sellfy link in events.json.",
+  "sellfyStore": "https://kmss.sellfy.store",
+
+  "_joinFormReadme": "Free options for the 'Join us' form: (1) a Google Form link, or (2) a Formspree endpoint (formspree.io, free tier). Leave joinFormspree empty to use the Google Form link instead.",
+  "joinFormUrl": "https://forms.gle/REPLACE-WITH-YOUR-FORM",
+  "joinFormspree": "",
+
+  "sponsors": [
+    { "name": "Kuwait Cultural Office — Canberra", "url": "https://www.kuwaitculture.org.au/" },
+    { "name": "Your sponsor here", "url": "" }
+  ],
+
+  "seo": {
+    "description": {
+      "en": "The official home of the Kuwaiti Melbourne Students Society — events, a full Melbourne survival guide for new students, and a community of 400+ Kuwaiti students.",
+      "ar": "الموقع الرسمي للجمعية الكويتية لطلبة ملبورن — الفعاليات، دليل ملبورن الكامل للطلبة الجدد، ومجتمع من أكثر من ٤٠٠ طالب كويتي."
+    },
+    "url": "https://kwt-mlb.github.io/KMSS-website/"
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "_readme": [
+    "MELBOURNE GUIDE — the survival guide for new students.",
+    "Each category has an icon (any emoji), a title, and a list of items.",
+    "Each item has: title, body (short paragraph), points (bullet list, can be empty []),",
+    "and links (buttons at the bottom of the item, can be empty []).",
+    "The first category can use \"type\": \"checklist\" to render as a numbered first-week checklist.",
+    "PLEASE keep prices and details up to date — a wrong number is worse than no number."
+  ],
+
+  "categories": [
+    {
+      "id": "arrival",
+      "icon": "🛬",
+      "type": "checklist",
+      "title": { "en": "Your first 7 days", "ar": "أول ٧ أيام" },
+      "intro": {
+        "en": "Do these in order and your first week goes from chaos to sorted. Most of it is free and takes an afternoon.",
+        "ar": "سو هالأشياء بالترتيب وأول أسبوع لك بيصير مرتب بدل ما يكون فوضى. أغلبها مجاني وياخذ عصرية وحدة."
+      },
+      "items": [
+        {
+          "title": { "en": "Get a SIM card at the airport", "ar": "خذ شريحة اتصال من المطار" },
+          "body": {
+            "en": "Telstra has the best coverage, Optus is cheaper, Amaysim/Boost run on their networks for less. A $30/month prepaid with 40–60GB is standard. Do this before you leave Tullamarine — you'll need data for maps and rideshare immediately.",
+            "ar": "تلسترا عندها أفضل تغطية، أوبتس أرخص، وأمايسيم وبوست يشتغلون على نفس الشبكات بسعر أقل. الطبيعي ٣٠ دولار بالشهر مع ٤٠–٦٠ جيجا. سو هذا قبل لا تطلع من مطار تولامارين — بتحتاج نت للخرايط والتوصيل من أول لحظة."
+          },
+          "points": [], "links": []
+        },
+        {
+          "title": { "en": "Buy and top up a Myki card", "ar": "اشتر بطاقة مايكي واشحنها" },
+          "body": {
+            "en": "Myki is the only way to pay for trams, trains and buses. Buy one at any 7-Eleven or the airport, load $30 to start. Melbourne has no Apple Pay tap-on for public transport — you need the physical card or the Myki app on Android.",
+            "ar": "مايكي هي الطريقة الوحيدة للدفع بالترام والقطار والباص. اشترها من أي سفن إليفن أو من المطار، واشحنها ٣٠ دولار بالبداية. ملبورن ما تقبل آبل باي بالمواصلات — لازم البطاقة نفسها أو تطبيق مايكي على أندرويد."
+          },
+          "points": [], "links": [{ "label": "ptv.vic.gov.au", "url": "https://www.ptv.vic.gov.au/" }]
+        },
+        {
+          "title": { "en": "Open an Australian bank account", "ar": "افتح حساب بنكي أسترالي" },
+          "body": {
+            "en": "CommBank, NAB, ANZ and Westpac all do free student accounts with no monthly fee. Bring your passport, CoE and your Australian address. Most let you start the application online before you arrive and just collect the card in branch.",
+            "ar": "كومبنك و NAB و ANZ و ويستباك كلهم عندهم حسابات طلبة مجانية بدون رسوم شهرية. يب الباسبورت وشهادة القيد (CoE) وعنوانك بأستراليا. أغلبهم يخلونك تبدأ الطلب أونلاين قبل ما توصل وبس تستلم البطاقة من الفرع."
+          },
+          "points": [], "links": []
+        },
+        {
+          "title": { "en": "Activate your OSHC health cover", "ar": "فعّل تأمينك الصحي OSHC" },
+          "body": {
+            "en": "Your student visa requires Overseas Student Health Cover. It's usually bought with your visa but not activated — log in to your provider (Medibank, Bupa, Allianz, nib) and activate it, then save your membership card to your phone. You need this number at every doctor's visit.",
+            "ar": "تأشيرة الطالب تتطلب تأمين صحي OSHC. عادة تشتريه مع الفيزا بس ما يكون مفعّل — ادخل حسابك عند المزود (ميدي بنك، بوبا، أليانز، nib) وفعّله، وحفظ بطاقة العضوية بتلفونك. بتحتاج هالرقم بكل زيارة للطبيب."
+          },
+          "points": [], "links": []
+        },
+        {
+          "title": { "en": "Register with the Kuwait Cultural Office", "ar": "سجّل بالمكتب الثقافي الكويتي" },
+          "body": {
+            "en": "If you're on a Kuwaiti scholarship, register with the Cultural Office in Canberra as soon as you arrive — your allowance, tuition payments and any letters you'll need later all go through them. Do it in week one, not week six.",
+            "ar": "إذا أنت مبتعث، سجّل بالمكتب الثقافي بكانبرا أول ما توصل — المخصص المالي والرسوم الدراسية وأي خطابات بتحتاجها بعدين كلها تمر عليهم. سوها بأول أسبوع، مو بالأسبوع السادس."
+          },
+          "points": [], "links": [{ "label": "kuwaitculture.org.au", "url": "https://www.kuwaitculture.org.au/" }]
+        },
+        {
+          "title": { "en": "Get your student ID and campus logins", "ar": "خذ بطاقة الطالب وحسابات الجامعة" },
+          "body": {
+            "en": "Your student card gets you concession pricing, library access and printing. While you're on campus, set up your uni email, Wi-Fi (eduroam) and the timetable app the same day.",
+            "ar": "بطاقة الطالب تعطيك أسعار مخفضة ودخول المكتبة والطباعة. وأنت بالجامعة، سوّ إيميل الجامعة والواي فاي (eduroam) وتطبيق الجدول بنفس اليوم."
+          },
+          "points": [], "links": []
+        },
+        {
+          "title": { "en": "Join the KMSS WhatsApp group", "ar": "انضم لقروب الواتساب" },
+          "body": {
+            "en": "Everything happens there first — housing leads, ride shares, lost documents, last-minute football. The website is the archive; the group is the pulse.",
+            "ar": "كل شي يصير هناك أول — عروض سكن، ومشاوير مشتركة، ووثايق ضايعة، وكورة على السريع. الموقع هو الأرشيف، والقروب هو النبض."
+          },
+          "points": [], "links": []
+        }
+      ]
+    },
+
+    {
+      "id": "housing",
+      "icon": "🏠",
+      "title": { "en": "Housing & suburbs", "ar": "السكن والمناطق" },
+      "intro": {
+        "en": "Where you live decides your commute, your budget and honestly your mood. Here's the honest version.",
+        "ar": "وين تسكن يحدد مشوارك اليومي وميزانيتك وصراحة حتى مزاجك. هذي النسخة الصادقة."
+      },
+      "items": [
+        {
+          "title": { "en": "Best suburbs for students", "ar": "أفضل المناطق للطلبة" },
+          "body": {
+            "en": "Pick by campus first, price second. Anything inside the tram network beats a cheap place with a 70-minute commute.",
+            "ar": "اختر حسب الجامعة أول، والسعر ثاني. أي مكان داخل شبكة الترام أفضل من مكان رخيص ومشواره ٧٠ دقيقة."
+          },
+          "points": [
+            { "en": "Carlton / Parkville — walking distance to Melbourne Uni, lots of students, higher rent.", "ar": "كارلتون / باركفيل — مشي على جامعة ملبورن، طلبة وايد، الإيجار أعلى." },
+            { "en": "CBD & Southbank — apartment towers, everything at your door, small rooms, great for RMIT.", "ar": "وسط المدينة وساوث بانك — أبراج شقق، كل شي تحت بيتك، غرف صغيرة، ممتاز لـ RMIT." },
+            { "en": "Clayton — Monash Uni's suburb. Cheaper houses, big student population, quieter.", "ar": "كلايتون — منطقة جامعة موناش. بيوت أرخص وطلبة وايد وأهدأ." },
+            { "en": "Footscray / Sunshine — best value in the west, halal food everywhere, 15 min train to the city.", "ar": "فوتسكراي / صن شاين — أفضل قيمة بالغرب، أكل حلال بكل مكان، ١٥ دقيقة قطار للمدينة." },
+            { "en": "Brunswick / Coburg — Middle Eastern community, great cafés, Sydney Road butchers.", "ar": "برونزويك / كوبرغ — جالية عربية، كافيهات حلوة، وقصابين شارع سيدني." }
+          ],
+          "links": []
+        },
+        {
+          "title": { "en": "What renting actually costs", "ar": "كم يكلف الإيجار فعلياً" },
+          "body": {
+            "en": "Rent in Melbourne is quoted PER WEEK, not per month. Multiply by 4.33 for a monthly figure. Budget for a bond (4 weeks rent, refundable) plus 2 weeks rent up front.",
+            "ar": "الإيجار بملبورن يذكر بالأسبوع، مو بالشهر. اضرب × ٤٫٣٣ عشان تطلع الشهري. احسب حسابك للتأمين (إيجار ٤ أسابيع، مسترد) + إيجار أسبوعين مقدماً."
+          },
+          "points": [
+            { "en": "Room in a sharehouse: $220–$350 / week", "ar": "غرفة بسكن مشترك: ٢٢٠–٣٥٠ دولار بالأسبوع" },
+            { "en": "Studio / 1-bed apartment: $420–$650 / week", "ar": "استوديو أو شقة غرفة: ٤٢٠–٦٥٠ دولار بالأسبوع" },
+            { "en": "Purpose-built student accommodation: $400–$700 / week (bills included)", "ar": "سكن طلابي مخصص: ٤٠٠–٧٠٠ دولار بالأسبوع (شامل الفواتير)" }
+          ],
+          "links": [
+            { "label": "Domain", "url": "https://www.domain.com.au/" },
+            { "label": "realestate.com.au", "url": "https://www.realestate.com.au/" },
+            { "label": "Flatmates", "url": "https://flatmates.com.au/" }
+          ]
+        },
+        {
+          "title": { "en": "Do not get scammed", "ar": "لا تنحاش عليك" },
+          "body": {
+            "en": "The rule is simple: never transfer money for a property you or a friend has not physically stood inside. Every year someone in our community loses a bond to a fake Facebook listing.",
+            "ar": "القاعدة بسيطة: لا تحوّل فلوس على شقة ما دخلتها أنت أو أحد من ربعك بنفسه. كل سنة أحد من مجتمعنا يخسر تأمينه على إعلان فيسبوك وهمي."
+          },
+          "points": [
+            { "en": "No inspection, no money. Ask a KMSS member to view it for you if you're still in Kuwait.", "ar": "بدون معاينة، ما في فلوس. اطلب من أحد أعضاء الجمعية يشوفها لك إذا أنت لسه بالكويت." },
+            { "en": "Bond must be lodged with the RTBA — you get an official receipt. No receipt = illegal.", "ar": "التأمين لازم يُودع عند RTBA وتوصلك إشعار رسمي. بدون إشعار = غير قانوني." },
+            { "en": "Get everything in a written lease. Verbal promises mean nothing at VCAT.", "ar": "خل كل شي بعقد مكتوب. الوعود الشفهية ما تنفع بمحكمة VCAT." }
+          ],
+          "links": [{ "label": "Consumer Affairs Victoria", "url": "https://www.consumer.vic.gov.au/housing/renting" }]
+        }
+      ]
+    },
+
+    {
+      "id": "transport",
+      "icon": "🚊",
+      "title": { "en": "Getting around", "ar": "التنقل" },
+      "intro": {
+        "en": "Melbourne's public transport is genuinely good. You do not need a car in your first year.",
+        "ar": "مواصلات ملبورن ممتازة فعلاً. ما تحتاج سيارة بأول سنة لك."
+      },
+      "items": [
+        {
+          "title": { "en": "Myki, zones and the free tram zone", "ar": "مايكي والمناطق والترام المجاني" },
+          "body": {
+            "en": "Tap on when you board, tap off when you leave a train or bus. Trams inside the CBD Free Tram Zone cost nothing — don't tap on at all inside it. Daily fares are capped, so unlimited travel after two trips.",
+            "ar": "المس البطاقة عند الركوب، والمسها عند النزول من القطار أو الباص. الترام داخل منطقة الترام المجاني بوسط المدينة ببلاش — لا تمس البطاقة أصلاً داخلها. فيه سقف يومي للأجرة، يعني بعد رحلتين تنقلك مجاني."
+          },
+          "points": [
+            { "en": "Inspectors are real and fines are ~$100+. Always tap on.", "ar": "المفتشين موجودين والغرامة ١٠٠ دولار فوق. دايماً امسح بطاقتك." },
+            { "en": "International students do NOT get the local student concession in Victoria — you pay full fare unless your provider issues an iUSEpass.", "ar": "الطلبة الدوليين ما ياخذون تخفيض الطلبة المحلي بفكتوريا — تدفع الأجرة كاملة إلا إذا جامعتك تصدر iUSEpass." }
+          ],
+          "links": [{ "label": "PTV journey planner", "url": "https://www.ptv.vic.gov.au/" }]
+        },
+        {
+          "title": { "en": "Driving & converting your licence", "ar": "القيادة وتحويل الرخصة" },
+          "body": {
+            "en": "You can drive on a Kuwaiti licence in Victoria as a temporary visitor, but carry an official English translation or an International Driving Permit. Australia drives on the LEFT. If you plan to stay long-term, converting to a Victorian licence requires a knowledge test and a drive test.",
+            "ar": "تقدر تسوق برخصتك الكويتية بفكتوريا كزائر مؤقت، بس خل معك ترجمة رسمية بالإنجليزي أو رخصة دولية. بأستراليا السواقة على اليسار. إذا ناوي تقعد فترة طويلة، تحويل الرخصة الفكتورية يحتاج اختبار نظري وعملي."
+          },
+          "points": [
+            { "en": "Speed cameras are everywhere and Victoria has zero tolerance. 3 km/h over is a fine.", "ar": "الرادارات بكل مكان وفكتوريا ما تسامح. ٣ كم/س زيادة = غرامة." },
+            { "en": "Hook turns in the CBD — look them up before you drive into the city, they are genuinely confusing.", "ar": "منعطفات الـ hook turn بوسط المدينة — اقرأ عنها قبل ما تسوق للمدينة، صراحة محيّرة." }
+          ],
+          "links": [{ "label": "VicRoads", "url": "https://www.vicroads.vic.gov.au/" }]
+        }
+      ]
+    },
+
+    {
+      "id": "food",
+      "icon": "🍽️",
+      "title": { "en": "Halal food & groceries", "ar": "الأكل الحلال والتسوق" },
+      "intro": {
+        "en": "Melbourne is one of the easiest cities in the world to eat halal. Here's where our members actually go.",
+        "ar": "ملبورن من أسهل المدن بالعالم للأكل الحلال. هذي الأماكن اللي أعضاؤنا يروحونها فعلاً."
+      },
+      "items": [
+        {
+          "title": { "en": "Halal butchers & grocers", "ar": "القصابين والبقالات الحلال" },
+          "body": {
+            "en": "For meat and Middle Eastern staples, three areas cover almost everything: Sydney Road (Brunswick/Coburg), Footscray, and Dandenong.",
+            "ar": "للحم والمواد الشرق أوسطية، ثلاث مناطق تغطي كل شي تقريباً: شارع سيدني (برونزويك/كوبرغ)، وفوتسكراي، ودانديننغ."
+          },
+          "points": [
+            { "en": "Sydney Road, Brunswick — the classic strip: butchers, bakeries, sweets, spices.", "ar": "شارع سيدني، برونزويك — الشارع المشهور: قصابين ومخابز وحلويات وبهارات." },
+            { "en": "A1 Bakery (Brunswick) — manakish and Lebanese bread, open early.", "ar": "مخبز A1 (برونزويك) — مناقيش وخبز لبناني، يفتح بدري." },
+            { "en": "Footscray Market — cheapest fruit, veg and fish in Melbourne, cash preferred.", "ar": "سوق فوتسكراي — أرخص خضار وفواكه وسمك بملبورن، يفضلون الكاش." },
+            { "en": "Coles and Woolworths carry halal-certified chicken in most inner suburbs — check the label.", "ar": "كولز وولورث عندهم دياي حلال معتمد بأغلب المناطق القريبة — شوف الملصق." }
+          ],
+          "links": []
+        },
+        {
+          "title": { "en": "Eating out", "ar": "المطاعم" },
+          "body": {
+            "en": "Verify halal status yourself — certification changes owners and Melbourne restaurants turn over fast. The safest bets are Lebanese, Turkish, Afghan, Malaysian and Somali kitchens.",
+            "ar": "تأكد بنفسك من الشهادة الحلال — الشهادات تتغير مع تغير الملاك والمطاعم بملبورن تتبدل بسرعة. الأضمن مطاعم لبنانية وتركية وأفغانية وماليزية وصومالية."
+          },
+          "points": [
+            { "en": "Use the 'Halal Square' or 'Zabihah' apps to filter by certification.", "ar": "استخدم تطبيقات Halal Square أو Zabihah للفلترة حسب الشهادة." },
+            { "en": "Lygon Street (Carlton) for late-night Italian, Victoria Street (Richmond) for Vietnamese.", "ar": "شارع لايغون (كارلتون) للإيطالي المتأخر، وشارع فكتوريا (ريتشموند) للفيتنامي." }
+          ],
+          "links": []
+        }
+      ]
+    },
+
+    {
+      "id": "faith",
+      "icon": "🕌",
+      "title": { "en": "Mosques & prayer spaces", "ar": "المساجد ومصليات" },
+      "intro": {
+        "en": "Every major campus has a prayer room, and there are mosques across the city for Jumu'ah.",
+        "ar": "كل جامعة كبيرة فيها مصلى، وفيه مساجد بكل أنحاء المدينة لصلاة الجمعة."
+      },
+      "items": [
+        {
+          "title": { "en": "Main mosques", "ar": "المساجد الرئيسية" },
+          "body": {
+            "en": "These run Jumu'ah with English and Arabic khutbahs and are used most by our community.",
+            "ar": "هذي تقيم الجمعة بخطبة عربية وإنجليزية وأكثر ما يرتادها مجتمعنا."
+          },
+          "points": [
+            { "en": "Islamic Museum of Australia & Newport Mosque — west.", "ar": "المتحف الإسلامي الأسترالي ومسجد نيوبورت — الغرب." },
+            { "en": "Preston Mosque — one of the largest, big Friday crowd.", "ar": "مسجد بريستون — من أكبر المساجد، ومزدحم يوم الجمعة." },
+            { "en": "Carlton / City Mosque — closest to Melbourne Uni and RMIT.", "ar": "مسجد كارلتون / المدينة — الأقرب لجامعة ملبورن و RMIT." },
+            { "en": "Clayton Mosque — for Monash students.", "ar": "مسجد كلايتون — لطلبة موناش." }
+          ],
+          "links": []
+        },
+        {
+          "title": { "en": "Prayer rooms on campus", "ar": "مصليات الجامعات" },
+          "body": {
+            "en": "Melbourne Uni, Monash, RMIT, Deakin, La Trobe, Swinburne and Victoria University all have multi-faith or dedicated Muslim prayer rooms. Ask your campus Islamic Society for the door code — most are keypad-locked.",
+            "ar": "جامعة ملبورن وموناش و RMIT وديكن ولاتروب وسوينبرن وجامعة فكتوريا كلهم عندهم مصليات. اسأل الجمعية الإسلامية بجامعتك عن رمز الباب — أغلبها بقفل رقمي."
+          },
+          "points": [], "links": []
+        }
+      ]
+    },
+
+    {
+      "id": "health",
+      "icon": "🩺",
+      "title": { "en": "Health & emergencies", "ar": "الصحة والطوارئ" },
+      "intro": {
+        "en": "Know these before you need them. Save the numbers in your phone today.",
+        "ar": "اعرف هالمعلومات قبل لا تحتاجها. حفظ الأرقام بتلفونك اليوم."
+      },
+      "items": [
+        {
+          "title": { "en": "Emergency numbers", "ar": "أرقام الطوارئ" },
+          "body": {
+            "en": "000 is police, fire and ambulance — free from any phone, even with no credit. Ambulances in Victoria are NOT free unless your cover includes them, so check your OSHC policy.",
+            "ar": "٠٠٠ للشرطة والإطفاء والإسعاف — مجاني من أي تلفون حتى لو ما عندك رصيد. الإسعاف بفكتوريا مو مجاني إلا إذا تأمينك يغطيه، فتأكد من بوليصة OSHC."
+          },
+          "points": [
+            { "en": "000 — police / fire / ambulance (emergency)", "ar": "٠٠٠ — الشرطة / الإطفاء / الإسعاف (طوارئ)" },
+            { "en": "131 444 — police, non-emergency", "ar": "131 444 — الشرطة، غير الطوارئ" },
+            { "en": "1800 022 222 — Nurse-on-Call, free 24/7 health advice", "ar": "1800 022 222 — استشارة تمريضية مجانية ٢٤ ساعة" },
+            { "en": "13 11 14 — Lifeline, 24/7 crisis and mental health support", "ar": "13 11 14 — Lifeline، دعم نفسي وأزمات ٢٤ ساعة" }
+          ],
+          "links": []
+        },
+        {
+          "title": { "en": "Seeing a doctor", "ar": "زيارة الطبيب" },
+          "body": {
+            "en": "You see a GP first for almost everything; they refer you to specialists. Book online with HotDoc. Bring your OSHC card — many clinics bulk-bill students, meaning you pay nothing up front.",
+            "ar": "تروح لطبيب عام (GP) أول لأغلب الحالات، وهو يحوّلك للأخصائي. احجز أونلاين عن طريق HotDoc. يب بطاقة OSHC — وايد عيادات تحاسب التأمين مباشرة يعني ما تدفع شي."
+          },
+          "points": [
+            { "en": "Every university has a free or low-cost campus health service — use it first.", "ar": "كل جامعة عندها خدمة صحية مجانية أو رخيصة بالحرم — استخدمها أول." },
+            { "en": "Free counselling is included in your tuition at every Victorian university. Using it is normal.", "ar": "الاستشارة النفسية المجانية مشمولة برسومك بكل جامعات فكتوريا. استخدامها شي طبيعي." }
+          ],
+          "links": []
+        }
+      ]
+    },
+
+    {
+      "id": "money",
+      "icon": "💳",
+      "title": { "en": "Money, phone & admin", "ar": "الفلوس والاتصالات والمعاملات" },
+      "intro": {
+        "en": "The boring stuff that quietly costs you hundreds if you get it wrong.",
+        "ar": "الأمور المملة اللي تكلفك مئات الدولارات بهدوء إذا غلطت فيها."
+      },
+      "items": [
+        {
+          "title": { "en": "Sending money from Kuwait", "ar": "تحويل الفلوس من الكويت" },
+          "body": {
+            "en": "Bank-to-bank transfers cost you twice — a wire fee plus a bad exchange rate. Wise and OFX are consistently cheaper for scholarship top-ups and family transfers.",
+            "ar": "التحويل من بنك لبنك يكلفك مرتين — رسوم التحويل + سعر صرف سيء. Wise و OFX عادة أرخص للتحويلات من الأهل أو المخصصات."
+          },
+          "points": [
+            { "en": "Always compare the RATE, not the fee. A '$0 fee' transfer usually hides 3% in the rate.", "ar": "قارن سعر الصرف مو الرسوم. تحويل 'بدون رسوم' عادة يخبي ٣٪ بسعر الصرف." }
+          ],
+          "links": []
+        },
+        {
+          "title": { "en": "Working while you study", "ar": "الشغل أثناء الدراسة" },
+          "body": {
+            "en": "Student visas allow limited work hours per fortnight during semester and unlimited during official breaks — check the current cap on the Home Affairs site, it changes. You need a Tax File Number (free, apply online) before your first payslip.",
+            "ar": "تأشيرة الطالب تسمح بساعات عمل محدودة كل أسبوعين خلال الترم، وبدون حد خلال الإجازات الرسمية — راجع الحد الحالي بموقع الهجرة لأنه يتغير. تحتاج رقم ضريبي (TFN) مجاني وتطلبه أونلاين قبل أول راتب."
+          },
+          "points": [
+            { "en": "Minimum wage is legally enforced. If you are offered $15/hour cash, that is illegal — not a favour.", "ar": "الحد الأدنى للأجور مطبّق قانونياً. إذا أحد عرض عليك ١٥ دولار بالساعة كاش، هذا غير قانوني — مو معروف." }
+          ],
+          "links": [{ "label": "Home Affairs", "url": "https://immi.homeaffairs.gov.au/" }]
+        }
+      ]
+    },
+
+    {
+      "id": "explore",
+      "icon": "🌏",
+      "title": { "en": "Things to actually do", "ar": "أماكن ونشاطات" },
+      "intro": {
+        "en": "You did not fly 12,000 km to only see your apartment and the library.",
+        "ar": "ما طرت ١٢ ألف كيلومتر عشان تشوف بس شقتك والمكتبة."
+      },
+      "items": [
+        {
+          "title": { "en": "Free and cheap in the city", "ar": "مجاني ورخيص بالمدينة" },
+          "body": {
+            "en": "Melbourne rewards walking. Most of the best days out cost nothing.",
+            "ar": "ملبورن تستاهل تتمشى فيها. أحلى الأيام ما تكلف شي."
+          },
+          "points": [
+            { "en": "NGV — the state gallery, free entry to the permanent collection.", "ar": "معرض فكتوريا الوطني NGV — الدخول للمجموعة الدائمة مجاني." },
+            { "en": "Queen Victoria Market — go on a Sunday, and again at night in summer.", "ar": "سوق الملكة فكتوريا — روح يوم الأحد، وبالليل بالصيف مرة ثانية." },
+            { "en": "Royal Botanic Gardens and the Tan track.", "ar": "الحدائق النباتية الملكية ومسار التان." },
+            { "en": "St Kilda beach at sunset — free penguins on the breakwater after dark.", "ar": "شاطئ سانت كيلدا وقت الغروب — بطاريق مجاناً على الحاجز بعد المغرب." }
+          ],
+          "links": []
+        },
+        {
+          "title": { "en": "Weekend trips worth taking", "ar": "رحلات نهاية الأسبوع" },
+          "body": {
+            "en": "You can reach all of these in a day. Split a rental car between four people and it's cheap.",
+            "ar": "توصلهم كلهم بيوم واحد. قسّم إيجار سيارة على أربعة وتطلع رخيصة."
+          },
+          "points": [
+            { "en": "Great Ocean Road — the Twelve Apostles, 3 hours west.", "ar": "الطريق الساحلي العظيم — الرسل الاثنا عشر، ٣ ساعات غرباً." },
+            { "en": "Phillip Island — penguin parade at dusk, 2 hours south.", "ar": "جزيرة فيليب — عرض البطاريق وقت الغروب، ساعتين جنوباً." },
+            { "en": "Dandenong Ranges — forest, tea houses and Puffing Billy, 1 hour east.", "ar": "مرتفعات داندينونغ — غابات وبيوت شاي وقطار بافينغ بيلي، ساعة شرقاً." },
+            { "en": "Mount Buller — actual snow in July and August.", "ar": "جبل بولر — ثلج حقيقي بيوليو وأغسطس." }
+          ],
+          "links": []
+        }
+      ]
+    }
+  ]
+}

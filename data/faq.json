@@ -1,0 +1,29 @@
+{
+  "_readme": "FAQ shown on the About page. Add or remove {...} blocks as questions come up.",
+  "faqs": [
+    {
+      "q": { "en": "Who can join KMSS?", "ar": "منو يقدر ينضم للجمعية؟" },
+      "a": { "en": "Any Kuwaiti student studying in Melbourne — undergrad, postgrad, English course or exchange. Partners, family and friends of members are welcome at almost all our events too.", "ar": "أي طالب كويتي يدرس بملبورن — بكالوريوس أو دراسات عليا أو دورة لغة أو تبادل. وأهل وربع الأعضاء مرحبين بأغلب فعالياتنا." }
+    },
+    {
+      "q": { "en": "Does it cost anything to be a member?", "ar": "هل العضوية بفلوس؟" },
+      "a": { "en": "Membership is free. Some larger events (gala dinners, trips) have a ticket price that covers food and transport — never profit.", "ar": "العضوية مجانية. بعض الفعاليات الكبيرة (حفلات العشاء والرحلات) لها تذكرة تغطي الأكل والمواصلات — بدون أي ربح." }
+    },
+    {
+      "q": { "en": "How do I buy tickets?", "ar": "كيف أشتري تذاكر؟" },
+      "a": { "en": "Every paid event has a 'Get tickets' button that takes you straight to our Sellfy store. You'll get your ticket by email instantly — show it at the door on your phone.", "ar": "كل فعالية مدفوعة عندها زر 'احجز تذكرتك' يوديك مباشرة لمتجرنا على Sellfy. بتوصلك التذكرة بالإيميل فوراً — ورّيها على الباب من تلفونك." }
+    },
+    {
+      "q": { "en": "I just landed in Melbourne. What do I do first?", "ar": "توني واصل ملبورن، شنو أسوي أول شي؟" },
+      "a": { "en": "Open our Melbourne Guide and work through the 'Your first 7 days' checklist — SIM card, Myki, bank account, OSHC, Cultural Office. Then message us and we'll connect you with students at your uni.", "ar": "افتح دليل ملبورن وامش على قائمة 'أول ٧ أيام' — شريحة، مايكي، حساب بنكي، تأمين OSHC، المكتب الثقافي. وبعدين راسلنا ونوصلك بطلبة من جامعتك." }
+    },
+    {
+      "q": { "en": "Can non-Kuwaitis come to events?", "ar": "هل غير الكويتيين يقدرون يحضرون؟" },
+      "a": { "en": "Yes — bring your friends. A few events are members-only for capacity reasons, and those are marked clearly on the event page.", "ar": "إيه — يب ربعك. فيه فعاليات قليلة للأعضاء فقط بسبب السعة، وهذي مكتوبة بوضوح بصفحة الفعالية." }
+    },
+    {
+      "q": { "en": "How can my business sponsor KMSS?", "ar": "كيف تقدر شركتي ترعى الجمعية؟" },
+      "a": { "en": "Email us and we'll send the sponsorship pack. We work with businesses that genuinely serve students — food, travel, phone plans, tutoring.", "ar": "راسلنا بالإيميل ونرسل لك ملف الرعاية. نتعامل مع الشركات اللي تخدم الطلبة فعلاً — أكل وسفر وخطوط اتصال ودروس خصوصية." }
+    }
+  ]
+}

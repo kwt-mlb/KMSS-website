@@ -1,0 +1,16 @@
+{
+  "_readme": [
+    "COMMITTEE — replace these with your real committee each year.",
+    "photo: leave \"\" and the site draws a nice coloured circle with their initials instead.",
+    "Delete or add whole {...} blocks freely."
+  ],
+  "year": "2026 / 2027",
+  "members": [
+    { "name": { "en": "Your Name", "ar": "اسمك" },       "role": { "en": "President", "ar": "الرئيس" },            "uni": "University of Melbourne", "photo": "", "email": "" },
+    { "name": { "en": "Vice President", "ar": "نائب الرئيس" }, "role": { "en": "Vice President", "ar": "نائب الرئيس" }, "uni": "Monash University",       "photo": "", "email": "" },
+    { "name": { "en": "Treasurer", "ar": "أمين الصندوق" }, "role": { "en": "Treasurer", "ar": "أمين الصندوق" },      "uni": "RMIT University",         "photo": "", "email": "" },
+    { "name": { "en": "Events Lead", "ar": "مسؤول الفعاليات" }, "role": { "en": "Events", "ar": "الفعاليات" },        "uni": "Deakin University",       "photo": "", "email": "" },
+    { "name": { "en": "Media Lead", "ar": "مسؤول الإعلام" }, "role": { "en": "Media & Design", "ar": "الإعلام والتصميم" }, "uni": "Swinburne University", "photo": "", "email": "" },
+    { "name": { "en": "Welfare Officer", "ar": "مسؤول شؤون الطلبة" }, "role": { "en": "Student Welfare", "ar": "شؤون الطلبة" }, "uni": "La Trobe University", "photo": "", "email": "" }
+  ]
+}

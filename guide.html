@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<title>The Melbourne Guide — KMSS</title>
+<meta name="description" content="A survival guide for Kuwaiti students landing in Melbourne: your first 7 days, housing and rent, Myki and transport, halal food, mosques, health cover and emergencies.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f9b8e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+  document.documentElement.classList.add("js");
+  try { var m = localStorage.getItem("kmss-theme"); if (m && m !== "system") document.documentElement.setAttribute("data-theme", m);
+        var l = localStorage.getItem("kmss-lang"); if (l) { document.documentElement.lang = l; document.documentElement.dir = l === "ar" ? "rtl" : "ltr"; } } catch (e) {}
+</script>
+</head>
+<body data-page="guide">
+<a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+<header id="site-nav"></header>
+
+<main id="main">
+  <section class="section section--sand" style="padding-block:clamp(48px,7vw,80px) 36px">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="home.guideEyebrow">For new students</span>
+      <h1 data-i18n="guide.title">The Melbourne Guide</h1>
+      <p class="lede" style="margin-top:14px;max-width:64ch" data-i18n="guide.lede">
+        Everything we wish someone had told us before we landed.
+      </p>
+      <label class="field" style="margin-top:26px;max-width:420px">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--ink-faint)"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="guide-search" type="search" data-i18n-attr="placeholder:guide.search" placeholder="Search the guide…" aria-label="Search the guide" style="width:100%">
+      </label>
+    </div>
+  </section>
+
+  <section class="section" style="padding-block:36px var(--section-y)">
+    <div class="wrap">
+      <div class="guide-layout">
+        <aside class="guide-nav" id="guide-nav"></aside>
+        <div>
+          <div class="empty hide" id="guide-nores">
+            <b data-i18n="guide.noResults">Nothing found</b>
+            <span data-i18n="guide.noResultsBody">Try a shorter word.</span>
+          </div>
+          <div id="guide-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2 data-i18n="guide.missing">Something missing or out of date?</h2>
+        <p style="margin-top:14px" data-i18n="guide.missingBody">This guide is only as good as the students who keep it current.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+          <a class="btn btn--primary" href="about.html#contact" data-i18n="guide.tellUs">Send us a correction</a>
+          <a class="btn btn--light" data-wa-link target="_blank" rel="noopener" href="#" data-i18n="join.wa">WhatsApp group</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages.js"></script>
+<script src="assets/js/guide.js"></script>
+</body>
+</html>

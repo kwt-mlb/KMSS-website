@@ -1,0 +1,120 @@
+/* ==========================================================================
+   KMSS — THEME FILE
+   --------------------------------------------------------------------------
+   THIS IS THE ONLY FILE YOU NEED TO TOUCH TO RE-BRAND THE WHOLE SITE.
+   Change a colour here and it updates every page, every button, every card.
+
+   How to change a colour:
+     1. Find the line you want below (they are all labelled).
+     2. Replace the #hex code with yours.
+     3. Save. Done — the whole site follows.
+
+   Placeholder palette in use right now: deep "midnight" ink, Gulf teal,
+   warm sand and a coral accent. Swap for your real brand colours anytime.
+   ========================================================================== */
+
+:root {
+  /* ---- BRAND COLOURS -------------------------------------------------- */
+  --brand:            #0f9b8e;   /* Main brand colour: buttons, links, highlights */
+  --brand-dark:       #0a7a70;   /* Darker version, used for hover states        */
+  --brand-light:      #6fd8cd;   /* Lighter version, used on dark backgrounds    */
+  --accent:           #f2704a;   /* Accent / "fun" colour: badges, hover pops    */
+  --accent-soft:      #ffe8e0;   /* Very light accent, for tinted backgrounds    */
+  --sand:             #e9dfd0;   /* Warm neutral, section dividers & panels      */
+  --gold:             #d9a441;   /* Small highlights: stars, "featured" tags     */
+
+  /* ---- INK & SURFACES (light mode) ------------------------------------ */
+  --ink:              #101820;   /* Main text colour            */
+  --ink-soft:         #4a5560;   /* Secondary text / paragraphs */
+  --ink-faint:        #7b8792;   /* Captions, meta, timestamps  */
+  --deep:             #101820;   /* Always-dark panels (hero, call-to-action bands).
+                                    Stays dark in BOTH light and dark mode.   */
+  --surface:          #ffffff;   /* Page background             */
+  --surface-2:        #f7f5f1;   /* Alternating section background */
+  --surface-3:        #efece6;   /* Cards on tinted sections    */
+  --line:             #e3e0da;   /* Borders and hairlines       */
+
+  /* ---- TYPOGRAPHY ----------------------------------------------------- */
+  --font-en: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-ar: 'IBM Plex Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+  --font-display: var(--font-en);   /* Headings */
+  --font-body:    var(--font-en);   /* Body text */
+
+  /* ---- SHAPE & DEPTH -------------------------------------------------- */
+  --radius-sm: 10px;
+  --radius:    16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(16, 24, 32, .06), 0 2px 8px rgba(16, 24, 32, .05);
+  --shadow:    0 4px 12px rgba(16, 24, 32, .07), 0 12px 32px rgba(16, 24, 32, .07);
+  --shadow-lg: 0 8px 24px rgba(16, 24, 32, .10), 0 24px 64px rgba(16, 24, 32, .12);
+  --ring: 0 0 0 3px color-mix(in srgb, var(--brand) 28%, transparent);
+
+  /* ---- LAYOUT --------------------------------------------------------- */
+  --max: 1180px;              /* Max content width */
+  --gutter: clamp(20px, 5vw, 48px);
+  --section-y: clamp(64px, 9vw, 120px);
+  --nav-h: 68px;
+
+  /* ---- MOTION --------------------------------------------------------- */
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --dur: .28s;
+}
+
+/* ==========================================================================
+   DARK MODE — automatically follows the visitor's device setting,
+   and can be toggled with the moon button in the navbar.
+   ========================================================================== */
+:root[data-theme="dark"] {
+  --brand:       #34c6b6;
+  --brand-dark:  #1fa596;
+  --brand-light: #8fe6db;
+  --accent:      #ff8460;
+  --accent-soft: #3a2620;
+  --sand:        #2a2f36;
+  --gold:        #e5b55c;
+
+  --ink:         #f2f5f7;
+  --ink-soft:    #b3bdc7;
+  --ink-faint:   #7e8b97;
+  --deep:        #070b11;
+  --surface:     #0d1117;
+  --surface-2:   #141a22;
+  --surface-3:   #1b232d;
+  --line:        #263040;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.4);
+  --shadow:    0 4px 14px rgba(0,0,0,.45);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,.55);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --brand:       #34c6b6;
+    --brand-dark:  #1fa596;
+    --brand-light: #8fe6db;
+    --accent:      #ff8460;
+    --accent-soft: #3a2620;
+    --sand:        #2a2f36;
+    --gold:        #e5b55c;
+
+    --ink:         #f2f5f7;
+    --ink-soft:    #b3bdc7;
+    --ink-faint:   #7e8b97;
+    --deep:        #070b11;
+    --surface:     #0d1117;
+    --surface-2:   #141a22;
+    --surface-3:   #1b232d;
+    --line:        #263040;
+
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.4);
+    --shadow:    0 4px 14px rgba(0,0,0,.45);
+    --shadow-lg: 0 16px 48px rgba(0,0,0,.55);
+  }
+}
+
+/* When the site is switched to Arabic, headings and body use the Arabic face. */
+:root[lang="ar"] {
+  --font-display: var(--font-ar);
+  --font-body:    var(--font-ar);
+}

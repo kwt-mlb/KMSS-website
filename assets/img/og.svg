@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101820"/><stop offset="1" stop-color="#0a2a2a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.2" cy="0.25" r="0.6">
+      <stop offset="0" stop-color="#0f9b8e" stop-opacity=".85"/><stop offset="1" stop-color="#0f9b8e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.85" cy="0.85" r="0.6">
+      <stop offset="0" stop-color="#f2704a" stop-opacity=".7"/><stop offset="1" stop-color="#f2704a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6fd8cd"/><stop offset="1" stop-color="#d9a441"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <g transform="translate(90,150)">
+    <rect width="96" height="96" rx="26" fill="url(#mark)"/>
+    <path d="M48 18 78 48 48 78 18 48Z" fill="none" stroke="#101820" stroke-width="3.5" opacity=".5"/>
+    <path d="M48 31 65 48 48 65 31 48Z" fill="#101820" opacity=".85"/>
+  </g>
+  <text x="90" y="330" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="82" font-weight="800" letter-spacing="-2">KMSS</text>
+  <text x="90" y="392" fill="#9fb0b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="600">Kuwaiti Melbourne Students Society</text>
+  <text x="90" y="470" fill="#6fd8cd" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Events · Melbourne Guide · Community</text>
+</svg>

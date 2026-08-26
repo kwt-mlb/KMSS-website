@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KMSS — Kuwaiti Melbourne Students Society</title>
+<meta name="description" content="The official home of the Kuwaiti Melbourne Students Society. Events, tickets, and a full Melbourne survival guide for new Kuwaiti students.">
+<meta name="theme-color" content="#0f9b8e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KMSS — Kuwaiti Melbourne Students Society">
+<meta property="og:description" content="Events, tickets and the Melbourne guide for Kuwaiti students. Your home away from home.">
+<meta property="og:image" content="assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+  // Apply the saved dark/light choice before first paint so the page never flashes.
+  document.documentElement.classList.add("js");
+  try { var m = localStorage.getItem('kmss-theme'); if (m && m !== 'system') document.documentElement.setAttribute('data-theme', m);
+        var l = localStorage.getItem('kmss-lang'); if (l) { document.documentElement.lang = l; document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr'; } } catch (e) {}
+</script>
+</head>
+<body data-page="index">
+<a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+<header id="site-nav"></header>
+
+<main id="main">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__pattern"></div>
+    <div class="wrap hero__inner">
+      <div>
+        <span class="hero__pill"><b data-site="name">KMSS</b>
+          <span data-site="fullName">Kuwaiti Melbourne Students Society</span></span>
+        <h1 style="margin-top:24px">
+          <span class="hl" data-site="tagline">Your home away from home in Melbourne</span>
+        </h1>
+        <p class="hero__lede" data-site="intro">
+          KMSS brings Kuwaiti students in Melbourne together — through events, support and a community that has your back.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="events.html" data-i18n="hero.cta1">See what's on</a>
+          <a class="btn btn--light" href="guide.html" data-i18n="hero.cta2">New in Melbourne?</a>
+        </div>
+        <div class="hero__stats" id="hero-stats"></div>
+      </div>
+      <div class="hero__card" id="hero-next"></div>
+    </div>
+  </section>
+
+  <!-- ============================ PILLARS ============================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow" data-i18n="home.pillarsEyebrow">What we do</span>
+        <h2 data-i18n="home.pillarsTitle">A society that actually shows up</h2>
+        <p class="lede" data-i18n="home.pillarsLede">Four things we commit to every single semester.</p>
+      </div>
+      <div class="grid" id="pillars" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr))"></div>
+    </div>
+  </section>
+
+  <!-- ======================== UPCOMING EVENTS ========================= -->
+  <section class="section section--tint">
+    <div class="wrap">
+      <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;max-width:none">
+        <div style="max-width:56ch">
+          <span class="eyebrow" data-i18n="home.upcomingEyebrow">Coming up</span>
+          <h2 data-i18n="home.upcomingTitle">What's on this semester</h2>
+        </div>
+        <a class="btn btn--ghost" href="events.html" data-i18n="home.allEvents">All events &amp; calendar</a>
+      </div>
+      <div class="cards cards--3" id="home-events"></div>
+    </div>
+  </section>
+
+  <!-- =========================== GUIDE TEASER ========================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="grid reveal" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:center">
+        <div>
+          <span class="eyebrow" data-i18n="home.guideEyebrow">For new students</span>
+          <h2 data-i18n="home.guideTitle">Landed in Melbourne? Start here.</h2>
+          <p class="lede" style="margin-top:16px" data-i18n="home.guideLede">
+            SIM card, Myki, bank account, OSHC, halal butchers, where to live and what rent actually costs.
+          </p>
+          <a class="btn btn--primary" style="margin-top:26px" href="guide.html" data-i18n="home.guideCta">Open the Melbourne Guide</a>
+        </div>
+        <div class="grid" style="grid-template-columns:1fr 1fr;gap:14px">
+          <div class="pillar" style="padding:20px"><div class="pillar__icon" style="width:42px;height:42px;margin-bottom:12px">🛬</div><b>First 7 days</b></div>
+          <div class="pillar" style="padding:20px"><div class="pillar__icon" style="width:42px;height:42px;margin-bottom:12px">🏠</div><b>Housing &amp; rent</b></div>
+          <div class="pillar" style="padding:20px"><div class="pillar__icon" style="width:42px;height:42px;margin-bottom:12px">🍽️</div><b>Halal food</b></div>
+          <div class="pillar" style="padding:20px"><div class="pillar__icon" style="width:42px;height:42px;margin-bottom:12px">🩺</div><b>Health &amp; OSHC</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SPONSORS ============================ -->
+  <section class="section section--tint">
+    <div class="wrap center">
+      <span class="eyebrow" style="justify-content:center" data-i18n="home.sponsorsTitle">Supported by</span>
+      <div class="sponsors" id="sponsors" style="margin-top:22px"></div>
+    </div>
+  </section>
+
+  <!-- ============================== JOIN ============================== -->
+  <section class="section" id="join">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2 data-i18n="join.title">Join KMSS — it's free</h2>
+        <p style="margin-top:14px" data-i18n="join.lede">One short form and you're in.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+          <a class="btn btn--primary" data-join-link target="_blank" rel="noopener" href="#" data-i18n="join.cta">Join the society</a>
+          <a class="btn btn--light" data-wa-link target="_blank" rel="noopener" href="#" data-i18n="join.wa">WhatsApp group</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages.js"></script>
+<script src="assets/js/events.js"></script>
+</body>
+</html>

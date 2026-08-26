@@ -1,0 +1,29 @@
+# Safety net for the committee.
+# Every time someone edits a file in /data on github.com, this checks the file
+# is still valid JSON before it can break the live site.
+name: Check content files
+
+on:
+  push:
+    paths: ['data/**.json']
+  pull_request:
+    paths: ['data/**.json']
+  workflow_dispatch:
+
+jobs:
+  json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate every JSON file in /data
+        run: |
+          fail=0
+          for f in data/*.json; do
+            if python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f"; then
+              echo "OK   $f"
+            else
+              echo "::error file=$f::$f is not valid JSON. Common causes: a missing comma, an extra comma before a } or ], or a \" that was deleted."
+              fail=1
+            fi
+          done
+          exit $fail

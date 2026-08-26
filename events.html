@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<title>Events &amp; Calendar — KMSS</title>
+<meta name="description" content="Every KMSS event: what's coming up, the full calendar, and the archive of everything we've run. Tickets on Sellfy.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f9b8e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+  document.documentElement.classList.add("js");
+  try { var m = localStorage.getItem("kmss-theme"); if (m && m !== "system") document.documentElement.setAttribute("data-theme", m);
+        var l = localStorage.getItem("kmss-lang"); if (l) { document.documentElement.lang = l; document.documentElement.dir = l === "ar" ? "rtl" : "ltr"; } } catch (e) {}
+</script>
+</head>
+<body data-page="events">
+<a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+<header id="site-nav"></header>
+
+<main id="main">
+  <section class="section section--sand" style="padding-block:clamp(48px,7vw,80px) 32px">
+    <div class="wrap">
+      <span class="eyebrow" data-i18n="home.upcomingEyebrow">Coming up</span>
+      <h1 data-i18n="events.title">Events</h1>
+      <p class="lede" style="margin-top:14px;max-width:62ch" data-i18n="events.lede">
+        Everything we're running, everything we've run.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-block:32px var(--section-y)">
+    <div class="wrap">
+      <div class="toolbar">
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" data-tab="upcoming" data-i18n="events.upcoming">Upcoming</button>
+          <button class="tab" data-tab="calendar" data-i18n="events.calendar">Calendar</button>
+          <button class="tab" data-tab="past" data-i18n="events.past">Past events</button>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <label class="field">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:var(--ink-faint)"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="ev-search" type="search" data-i18n-attr="placeholder:events.search" placeholder="Search events…" aria-label="Search events">
+          </label>
+          <label class="field"><select id="ev-cat" aria-label="Filter by category"></select></label>
+        </div>
+      </div>
+
+      <div data-panel="upcoming"><div class="cards" id="up-list"></div></div>
+      <div data-panel="calendar" class="hide"><div class="cal" id="cal"></div></div>
+      <div data-panel="past" class="hide"><div id="past-list"></div></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2 data-i18n="join.title">Join KMSS — it's free</h2>
+        <p style="margin-top:14px" data-i18n="join.lede">One short form and you're in.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
+          <a class="btn btn--primary" data-join-link target="_blank" rel="noopener" href="#" data-i18n="join.cta">Join the society</a>
+          <a class="btn btn--light" data-wa-link target="_blank" rel="noopener" href="#" data-i18n="join.wa">WhatsApp group</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pages.js"></script>
+<script src="assets/js/events.js"></script>
+</body>
+</html>
