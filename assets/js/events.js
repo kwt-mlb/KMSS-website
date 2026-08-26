@@ -43,8 +43,8 @@
     const img = ev.image
       ? `<img src="${esc(ev.image)}" alt="" loading="lazy" onerror="this.remove()">`
       : `<div style="width:100%;height:100%;background:
-           linear-gradient(135deg, color-mix(in srgb, var(--brand) 78%, transparent), color-mix(in srgb, var(--accent) 62%, transparent));
-           display:grid;place-items:center;color:#fff;font-size:2.6rem">${catEmoji(ev.category)}</div>`;
+           linear-gradient(140deg, var(--deep), color-mix(in srgb, var(--brand-light) 48%, var(--deep)));
+           display:grid;place-items:center;font-size:2.6rem">${catEmoji(ev.category)}</div>`;
     return `<div class="card__media">${chip}${img}</div>`;
   }
 

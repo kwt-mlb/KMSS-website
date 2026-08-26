@@ -90,13 +90,20 @@ p  { text-wrap: pretty; }
 }
 .btn:hover { transform: translateY(-2px); }
 .btn:active { transform: translateY(0); }
-.btn--primary { background: var(--brand); color: #fff; box-shadow: var(--shadow-sm); }
-.btn--primary:hover { background: var(--brand-dark); color: #fff; box-shadow: var(--shadow); }
+.btn--primary { background: var(--brand); color: var(--on-brand); box-shadow: var(--shadow-sm); }
+.btn--primary:hover { background: var(--brand-dark); color: var(--on-brand); box-shadow: var(--shadow); }
 .btn--accent  { background: var(--accent); color: #fff; }
 .btn--accent:hover { background: var(--accent); filter: brightness(.93); color: #fff; }
 .btn--ghost { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn--ghost:hover { border-color: var(--brand); color: var(--brand); background: color-mix(in srgb, var(--brand) 7%, transparent); }
 .btn--light { background: rgba(255,255,255,.14); color: #fff; border-color: rgba(255,255,255,.35); backdrop-filter: blur(6px); }
+
+/* The hero and the call-to-action bands are always KMSS navy, so a navy primary
+   button would vanish into them. Inside those two, primary flips to off-white. */
+.hero .btn--primary, .cta-band .btn--primary {
+  background: var(--deep-fg); color: var(--deep); box-shadow: var(--shadow-sm);
+}
+.hero .btn--primary:hover, .cta-band .btn--primary:hover { background: #fff; color: var(--deep); }
 .btn--light:hover { background: rgba(255,255,255,.24); color: #fff; }
 .btn--sm { padding: 9px 16px; font-size: .85rem; }
 .btn--block { width: 100%; }
@@ -116,7 +123,14 @@ p  { text-wrap: pretty; }
 .nav__inner { display: flex; align-items: center; gap: 20px; height: 100%; }
 .brand { display: flex; align-items: center; gap: 11px; font-weight: 800; color: var(--ink); font-size: 1.02rem; letter-spacing: -.02em; }
 .brand:hover { color: var(--ink); }
-.brand__mark { width: 38px; height: 38px; flex: 0 0 38px; border-radius: 11px; }
+/* The logo is drawn as a mask filled with the current colour, so the single
+   assets/img/logo-mark.svg works on white, on navy and in dark mode. */
+.brand__mark {
+  width: 34px; height: 38px; flex: 0 0 34px;
+  background: var(--brand);
+  -webkit-mask: url("../img/logo-mark.svg") center / contain no-repeat;
+          mask: url("../img/logo-mark.svg") center / contain no-repeat;
+}
 .brand__text small { display: block; font-size: .68rem; font-weight: 600; color: var(--ink-faint); letter-spacing: .04em; line-height: 1.3; }
 
 .nav__links { display: flex; align-items: center; gap: 4px; margin-inline-start: auto; }
@@ -169,9 +183,9 @@ p  { text-wrap: pretty; }
 .hero__bg::before {
   content: ""; position: absolute; inset: -20%;
   background:
-    radial-gradient(48% 55% at 18% 22%, color-mix(in srgb, var(--brand) 68%, transparent) 0%, transparent 62%),
-    radial-gradient(42% 50% at 82% 12%, color-mix(in srgb, var(--accent) 52%, transparent) 0%, transparent 60%),
-    radial-gradient(60% 60% at 60% 96%, color-mix(in srgb, var(--gold) 34%, transparent) 0%, transparent 64%);
+    radial-gradient(50% 58% at 16% 20%, color-mix(in srgb, var(--brand-light) 42%, transparent) 0%, transparent 64%),
+    radial-gradient(44% 52% at 84% 10%, color-mix(in srgb, var(--accent) 24%, transparent) 0%, transparent 62%),
+    radial-gradient(62% 62% at 62% 98%, color-mix(in srgb, var(--gold) 18%, transparent) 0%, transparent 66%);
   filter: blur(6px);
   animation: drift 26s var(--ease) infinite alternate;
 }
@@ -205,7 +219,7 @@ p  { text-wrap: pretty; }
   backdrop-filter: blur(8px);
 }
 :root[dir="rtl"] .hero__pill { padding: 7px 8px 7px 15px; }
-.hero__pill b { background: var(--accent); color: #fff; padding: 3px 10px; border-radius: var(--radius-pill); font-size: .75rem; }
+.hero__pill b { background: var(--deep-fg); color: var(--deep); padding: 3px 10px; border-radius: var(--radius-pill); font-size: .75rem; font-weight: 800; }
 
 .hero__stats { display: flex; flex-wrap: wrap; gap: 12px 34px; margin-top: 44px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.16); }
 .hero__stat b { display: block; font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 800; color: #fff; line-height: 1.1; }
@@ -264,7 +278,7 @@ p  { text-wrap: pretty; }
 .tag--brand  { background: color-mix(in srgb, var(--brand) 13%, transparent);  color: var(--brand);  border-color: transparent; }
 .tag--accent { background: color-mix(in srgb, var(--accent) 15%, transparent); color: var(--accent); border-color: transparent; }
 .tag--gold   { background: color-mix(in srgb, var(--gold) 18%, transparent);   color: var(--gold);   border-color: transparent; }
-.tag--free   { background: color-mix(in srgb, var(--brand) 90%, #fff);         color: #fff;          border-color: transparent; }
+.tag--free   { background: var(--brand);                                       color: var(--on-brand); border-color: transparent; }
 .tag--soldout{ background: var(--surface-3); color: var(--ink-faint); border-color: var(--line); }
 
 /* --------------------------------------------------------------------------
@@ -328,7 +342,7 @@ p  { text-wrap: pretty; }
 }
 .cal__cell:nth-child(7n) { border-inline-end: 0; }
 .cal__cell.is-out { background: var(--surface-2); opacity: .55; }
-.cal__cell.is-today .cal__num { background: var(--brand); color: #fff; }
+.cal__cell.is-today .cal__num { background: var(--brand); color: var(--on-brand); }
 .cal__num { font-size: .8rem; font-weight: 700; width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; color: var(--ink-soft); }
 .cal__ev {
   font-size: .72rem; font-weight: 700; line-height: 1.3; padding: 4px 7px; border-radius: 7px; cursor: pointer;
@@ -416,7 +430,7 @@ p  { text-wrap: pretty; }
 .checklist li::before {
   counter-increment: step; content: counter(step);
   flex: 0 0 28px; height: 28px; border-radius: 50%; display: grid; place-items: center;
-  background: var(--brand); color: #fff; font-weight: 800; font-size: .82rem;
+  background: var(--brand); color: var(--on-brand); font-weight: 800; font-size: .82rem;
 }
 .checklist b { display: block; }
 .checklist p { font-size: .92rem; color: var(--ink-soft); }
@@ -449,8 +463,8 @@ p  { text-wrap: pretty; }
 .cta-band::before {
   content: ""; position: absolute; inset: -30%; z-index: -1;
   background:
-    radial-gradient(45% 60% at 12% 30%, color-mix(in srgb, var(--brand) 72%, transparent), transparent 62%),
-    radial-gradient(45% 60% at 88% 78%, color-mix(in srgb, var(--accent) 58%, transparent), transparent 62%);
+    radial-gradient(45% 60% at 12% 30%, color-mix(in srgb, var(--brand-light) 40%, transparent), transparent 62%),
+    radial-gradient(45% 60% at 88% 78%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 62%);
 }
 .cta-band h2 { color: #fff; }
 .cta-band p { color: rgba(255,255,255,.8); max-width: 56ch; }
@@ -475,7 +489,7 @@ p  { text-wrap: pretty; }
   background: var(--surface); border: 1px solid var(--line); color: var(--ink-soft);
   transition: all var(--dur) var(--ease);
 }
-.socials a:hover { background: var(--brand); border-color: var(--brand); color: #fff; transform: translateY(-3px); }
+.socials a:hover { background: var(--brand); border-color: var(--brand); color: var(--on-brand); transform: translateY(-3px); }
 
 /* Newsletter / join form */
 .joinform { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }

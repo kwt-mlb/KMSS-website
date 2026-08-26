@@ -2,7 +2,7 @@
   "_readme": "Society-wide settings. Edit the values on the right of each colon. Keep the quotes and commas. See docs/HOW-TO-EDIT.md",
 
   "name":       { "en": "KMSS", "ar": "KMSS" },
-  "fullName":   { "en": "Kuwaiti Melbourne Students Society", "ar": "الجمعية الكويتية لطلبة ملبورن" },
+  "fullName":   { "en": "Kuwait Melbourne Student Society", "ar": "الجمعية الكويتية لطلبة ملبورن" },
   "tagline":    { "en": "Your home away from home in Melbourne", "ar": "بيتك الثاني في ملبورن" },
   "foundedYear": 2019,
   "city":       { "en": "Melbourne, Australia", "ar": "ملبورن، أستراليا" },
@@ -67,7 +67,7 @@
 
   "seo": {
     "description": {
-      "en": "The official home of the Kuwaiti Melbourne Students Society — events, a full Melbourne survival guide for new students, and a community of 400+ Kuwaiti students.",
+      "en": "The official home of the Kuwait Melbourne Student Society — events, a full Melbourne survival guide for new students, and a community of 400+ Kuwaiti students.",
       "ar": "الموقع الرسمي للجمعية الكويتية لطلبة ملبورن — الفعاليات، دليل ملبورن الكامل للطلبة الجدد، ومجتمع من أكثر من ٤٠٠ طالب كويتي."
     },
     "url": "https://kwt-mlb.github.io/KMSS-website/"

@@ -179,15 +179,11 @@ const KMSS = (() => {
     { key: 'nav.about',  href: 'about.html' },
   ];
 
-  function logoMark(size = 38) {
-    return `<svg class="brand__mark" width="${size}" height="${size}" viewBox="0 0 64 64" role="img" aria-hidden="true">
-      <defs><linearGradient id="kmssg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="var(--brand)"/><stop offset="1" stop-color="var(--accent)"/>
-      </linearGradient></defs>
-      <rect width="64" height="64" rx="17" fill="url(#kmssg)"/>
-      <path d="M32 12 52 32 32 52 12 32Z" fill="none" stroke="#fff" stroke-width="2.4" opacity=".55"/>
-      <path d="M32 21 43 32 32 43 21 32Z" fill="#fff" opacity=".92"/>
-    </svg>`;
+  // The KMSS mark. Drawn as a CSS mask (see .brand__mark in main.css) so the one
+  // SVG file adapts to navy on white, off-white on navy, and dark mode.
+  function logoMark(height = 38) {
+    const width = Math.round(height * 34 / 38);
+    return `<span class="brand__mark" style="width:${width}px;height:${height}px;flex-basis:${width}px" aria-hidden="true"></span>`;
   }
 
   function renderChrome() {

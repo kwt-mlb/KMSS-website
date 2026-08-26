@@ -1,6 +1,6 @@
 # KMSS Website
 
-The website of the **Kuwaiti Melbourne Students Society** — events, ticketing,
+The website of the **Kuwait Melbourne Student Society** — events, ticketing,
 a bilingual Melbourne guide for new students, and the archive of everything we've run.
 
 **Editing the site?** → **[docs/HOW-TO-EDIT.md](docs/HOW-TO-EDIT.md)** (no coding required)
@@ -35,7 +35,11 @@ The brief was *professional, but no headache to run*. So:
 - **Events file themselves.** An event's `date` decides whether it shows as upcoming
   or moves into the past-events archive. Nobody has to remember to move anything.
 - **All branding is in one file** (`assets/css/theme.css`) so a re-brand is a
-  five-minute job, not a rewrite.
+  five-minute job, not a rewrite. The palette is taken from the logo artwork:
+  navy `#060f49` and off-white `#e4e5e5`, with a red and a gold used sparingly
+  for small highlights.
+- **The logo is a single SVG** (`assets/img/logo-mark.svg`) rendered as a CSS mask,
+  so one file serves navy-on-white, off-white-on-navy and dark mode.
 - **A safety net on every save** — a GitHub Action checks the content files are valid
   before a typo can blank out a section of the live site.
 - **Hosted free on GitHub Pages,** forever, with no server and no bill to hand over.

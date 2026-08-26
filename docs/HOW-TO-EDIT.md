@@ -121,9 +121,13 @@ Open `assets/css/theme.css`. The top of that file is a list of colours with a
 comment explaining each one:
 
 ```css
---brand:  #0f9b8e;   /* Main brand colour: buttons, links, highlights */
---accent: #f2704a;   /* Accent / "fun" colour: badges, hover pops     */
+--brand:  #060f49;   /* KMSS navy: buttons, links, highlights   */
+--sand:   #e4e5e5;   /* KMSS off-white: panels and dividers     */
+--accent: #c8102e;   /* Small highlights only                   */
 ```
+
+The first two are taken straight off the logo artwork. If you ever want the site
+navy-and-white only, set `--accent` and `--gold` to `#060f49` as well.
 
 Change a hex code, save, done — it updates every page at once. Dark mode has its
 own short list further down the same file.
