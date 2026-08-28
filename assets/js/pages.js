@@ -12,7 +12,7 @@
     if (!host) return;
     const stats = KMSS.state.site?.stats || [];
     host.innerHTML = stats.map(s =>
-      `<div class="hero__stat"><b>${esc(s.value)}</b><span>${esc(pick(s.label))}</span></div>`).join('');
+      `<div class="hero__stat"><b dir="ltr">${esc(s.value)}</b><span>${esc(pick(s.label))}</span></div>`).join('');
   }
 
   function renderPillars() {

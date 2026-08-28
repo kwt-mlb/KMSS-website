@@ -15,6 +15,7 @@
   "hero.cta1":        { "en": "See what's on",  "ar": "شوف الفعاليات" },
   "hero.cta2":        { "en": "New in Melbourne?", "ar": "جديد بملبورن؟" },
   "hero.noEvents":    { "en": "Nothing scheduled right now — new events drop every few weeks.", "ar": "ما فيه فعاليات حالياً — ننزل فعاليات يديدة كل كم أسبوع." },
+  "hero.follow":      { "en": "Follow us on Instagram", "ar": "تابعنا بالانستقرام" },
 
   "home.pillarsEyebrow": { "en": "What we do", "ar": "شنو نسوي" },
   "home.pillarsTitle":   { "en": "A society that actually shows up", "ar": "جمعية موجودة فعلاً" },

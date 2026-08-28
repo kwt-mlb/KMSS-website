@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" role="img" aria-label="Flag of Kuwait">
+  <title>Flag of Kuwait</title>
+  <rect width="60" height="10" y="0"  fill="#007A3D"/>
+  <rect width="60" height="10" y="10" fill="#FFFFFF"/>
+  <rect width="60" height="10" y="20" fill="#CE1126"/>
+  <path d="M0 0 15 10 15 20 0 30Z" fill="#000000"/>
+</svg>

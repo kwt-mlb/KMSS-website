@@ -357,7 +357,17 @@
     if (heroHost) {
       const next = upcoming[0];
       if (!next) {
-        heroHost.innerHTML = `<p style="color:var(--ink-soft)">${esc(t('hero.noEvents'))}</p>`;
+        // Nothing scheduled yet — still give the card something to say and do,
+        // rather than leaving a bare panel with one line of grey text in it.
+        const ig = KMSS.state.site?.contact?.instagram;
+        heroHost.innerHTML = `
+          <div class="hero__empty">
+            <div class="hero__empty-icon" aria-hidden="true">${I.cal}</div>
+            <h3>${esc(t('events.noUpcoming'))}</h3>
+            <p>${esc(t('hero.noEvents'))}</p>
+            ${ig ? `<a class="btn btn--primary btn--sm" href="${esc(ig)}" target="_blank" rel="noopener">${esc(t('hero.follow'))}</a>`
+                 : `<a class="btn btn--primary btn--sm" href="events.html">${esc(t('events.past'))}</a>`}
+          </div>`;
       } else {
         heroHost.innerHTML = `
           <span class="tag tag--accent">${esc(t('hero.badge'))}</span>

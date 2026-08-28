@@ -104,6 +104,9 @@ p  { text-wrap: pretty; }
   background: var(--deep-fg); color: var(--deep); box-shadow: var(--shadow-sm);
 }
 .hero .btn--primary:hover, .cta-band .btn--primary:hover { background: #fff; color: var(--deep); }
+/* …except inside the hero's light card, where navy-on-white is correct again. */
+.hero__card .btn--primary { background: var(--brand); color: var(--on-brand); box-shadow: var(--shadow-sm); }
+.hero__card .btn--primary:hover { background: var(--brand-dark); color: var(--on-brand); }
 .btn--light:hover { background: rgba(255,255,255,.24); color: #fff; }
 .btn--sm { padding: 9px 16px; font-size: .85rem; }
 .btn--block { width: 100%; }
@@ -185,7 +188,7 @@ p  { text-wrap: pretty; }
   background:
     radial-gradient(50% 58% at 16% 20%, color-mix(in srgb, var(--brand-light) 42%, transparent) 0%, transparent 64%),
     radial-gradient(44% 52% at 84% 10%, color-mix(in srgb, var(--accent) 24%, transparent) 0%, transparent 62%),
-    radial-gradient(62% 62% at 62% 98%, color-mix(in srgb, var(--gold) 18%, transparent) 0%, transparent 66%);
+    radial-gradient(62% 62% at 62% 98%, color-mix(in srgb, var(--kw-green) 16%, transparent) 0%, transparent 66%);
   filter: blur(6px);
   animation: drift 26s var(--ease) infinite alternate;
 }
@@ -206,9 +209,20 @@ p  { text-wrap: pretty; }
 @media (max-width: 900px) { .hero__inner { grid-template-columns: 1fr; padding-block: 64px 72px; } }
 
 .hero h1 { color: #fff; }
+/* Headline stays clean — a green/white/red run down the text is Italy's
+   tricolour, not Kuwait's. The Kuwaiti identity lives in the flag accent
+   above it (.hero__flag), where the black hoist trapezoid can actually show. */
 .hero h1 .hl {
-  background: linear-gradient(100deg, var(--brand-light), var(--gold));
+  display: block;
+  background: linear-gradient(175deg, #ffffff 0%, #ffffff 45%, var(--brand-light) 100%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+
+/* The real flag, at a size where the hoist trapezoid is legible. */
+.hero__flag {
+  display: block; width: 62px; height: auto; border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.35), 0 0 0 1px rgba(255,255,255,.16);
 }
 .hero__lede { color: rgba(255,255,255,.82); font-size: clamp(1.05rem, 1.8vw, 1.22rem); max-width: 54ch; margin-top: 20px; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
@@ -233,6 +247,14 @@ p  { text-wrap: pretty; }
 }
 @keyframes floaty { from { transform: translateY(0); } to { transform: translateY(-12px); } }
 .hero__card h3 { margin-block: 6px 4px; }
+.hero__empty { text-align: center; padding: 12px 4px; }
+.hero__empty-icon {
+  width: 52px; height: 52px; margin: 0 auto 14px; border-radius: 16px;
+  display: grid; place-items: center; font-size: 1.5rem;
+  background: color-mix(in srgb, var(--brand) 10%, transparent);
+}
+.hero__empty p { color: var(--ink-soft); font-size: .94rem; margin-top: 8px; }
+.hero__empty .btn { margin-top: 18px; }
 
 /* --------------------------------------------------------------------------
    Cards

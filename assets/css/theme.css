@@ -26,6 +26,13 @@
   --sand:             #e4e5e5;   /* KMSS off-white. Panels and dividers.         */
   --gold:             #c9992e;   /* Rare highlights: stars, "featured" tags.     */
 
+  /* ---- KUWAIT FLAG ----------------------------------------------------- */
+  /* The flag itself is drawn with its exact official colours in
+     assets/img/kw-flag.svg and is deliberately NOT themed.
+     This is only the soft green wash in the hero background — the flag's green
+     lifted in brightness so it reads at all against the navy. */
+  --kw-green:         #2ecc80;
+
   /* ---- INK & SURFACES (light mode) ------------------------------------ */
   --ink:              #0d1226;   /* Main text colour            */
   --ink-soft:         #4c5570;   /* Secondary text / paragraphs */
