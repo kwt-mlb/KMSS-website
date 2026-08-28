@@ -394,7 +394,12 @@
     const host = document.getElementById('up-list') || document.getElementById('home-events');
     try {
       const data = await KMSS.loadJSON('events');
-      ALL = (data.events || []).filter(e => e && e.date && e.id);
+      const all = (data.events || []).filter(e => e && e.id);
+      // An event with no date is a draft: it stays in the file but off the site
+      // until someone fills the date in. See data/events.json.
+      ALL = all.filter(e => e.date);
+      const drafts = all.length - ALL.length;
+      if (drafts) console.info(`[KMSS] ${drafts} event(s) hidden — they have no date yet. See data/events.json.`);
     } catch {
       KMSS.errorBanner(host, '(data/events.json)');
       return;

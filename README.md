@@ -34,6 +34,7 @@ The brief was *professional, but no headache to run*. So:
   with no local setup. The design is completely separate from the words.
 - **Events file themselves.** An event's `date` decides whether it shows as upcoming
   or moves into the past-events archive. Nobody has to remember to move anything.
+  An event with no date is a draft and stays off the site until someone fills it in.
 - **All branding is in one file** (`assets/css/theme.css`) so a re-brand is a
   five-minute job, not a rewrite. The palette is taken from the logo artwork:
   navy `#060f49` and off-white `#e4e5e5`, with a red and a gold used sparingly

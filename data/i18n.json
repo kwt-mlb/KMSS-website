@@ -90,6 +90,13 @@
   "about.faqTitle":    { "en": "Frequently asked", "ar": "الأسئلة الشائعة" },
   "about.contactTitle":{ "en": "Get in touch", "ar": "تواصل معنا" },
 
+  "team.exec":       { "en": "Executive",            "ar": "اللجنة التنفيذية" },
+  "team.student":    { "en": "Student Committee",    "ar": "لجنة الطلبة" },
+  "team.activities": { "en": "Activities Committee", "ar": "لجنة النشاطات" },
+  "team.sport":      { "en": "Sport Committee",      "ar": "اللجنة الرياضية" },
+  "team.media":      { "en": "Media Committee",      "ar": "اللجنة الإعلامية" },
+  "team.other":      { "en": "Committee",            "ar": "اللجنة" },
+
   "join.title": { "en": "Join KMSS — it's free", "ar": "انضم للجمعية — مجاناً" },
   "join.lede":  { "en": "One short form. You'll get event invites, the new-student guide and an introduction to students at your university.", "ar": "استمارة قصيرة وحدة. بتوصلك دعوات الفعاليات ودليل الطلبة الجدد وتعارف على طلبة من جامعتك." },
   "join.cta":   { "en": "Join the society", "ar": "انضم للجمعية" },

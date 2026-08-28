@@ -1,196 +1,170 @@
 {
   "_readme": [
     "EVENTS — this is the file you will edit most often.",
-    "To add an event: copy one whole {...} block, paste it at the top of the list, change the values.",
-    "date      : always YYYY-MM-DD (e.g. 2026-09-14). The site sorts and files events automatically.",
+    "",
+    "DRAFTS: an event with an empty date (\"date\": \"\") does NOT appear on the site.",
+    "That is how you park an event you haven't scheduled yet. Fill the date in and",
+    "it publishes itself — into Upcoming, then into the Past archive after it runs.",
+    "",
+    "To add an event: copy one whole {...} block, paste it at the top of the list,",
+    "change the values, and put a comma after the closing }.",
+    "",
+    "date      : YYYY-MM-DD (e.g. 2026-09-14), or \"\" to keep it as a draft",
     "start/end : 24-hour time, e.g. 18:30. Leave end as \"\" if you don't know it.",
-    "ticket    : your Sellfy product link. Leave \"\" if the event is free or not on sale yet.",
-    "status    : \"open\" | \"soldout\" | \"free\" | \"invite\"   (controls the button + badge)",
-    "featured  : true puts the event in the big wide card at the top of Upcoming. Only use on one.",
-    "image     : a link to a picture (Instagram post image, Google Drive direct link, or assets/img/...).",
-    "album     : for past events — link to the Google Photos / Drive album. Leave \"\" if none.",
-    "Everything with en/ar can stay English-only if you're in a rush — Arabic falls back to English."
+    "ticket    : the Sellfy product link. Leave \"\" if free or not on sale yet.",
+    "status    : \"open\" | \"soldout\" | \"free\" | \"invite\"",
+    "featured  : true puts the event in the big wide card. Only use it on one.",
+    "image     : a link to a picture (an Instagram image, a Drive link, or assets/img/...)",
+    "album     : for past events — a link to the photo album. Leave \"\" if none.",
+    "Anything with en/ar can stay English-only — Arabic falls back to English."
   ],
 
   "events": [
     {
-      "id": "welcome-2026",
-      "title": { "en": "Welcome Week BBQ 2026", "ar": "حفل الترحيب — باربكيو ٢٠٢٦" },
-      "date": "2026-09-12",
-      "start": "12:00",
-      "end": "16:00",
-      "venue": { "en": "Royal Park, Parkville", "ar": "رويال بارك، باركفيل" },
-      "mapUrl": "https://maps.google.com/?q=Royal+Park+Parkville+Melbourne",
-      "category": "social",
-      "price": "Free",
-      "status": "free",
-      "featured": true,
-      "ticket": "",
-      "image": "",
-      "album": "",
-      "summary": {
-        "en": "New semester, new faces. Free food, football and the easiest way to meet every Kuwaiti student in Melbourne in one afternoon.",
-        "ar": "ترم جديد ووياه ويوه يديدة. أكل مجاني وكورة وأسهل طريقة تعرف كل الطلبة الكويتيين في ملبورن بعصرية وحدة."
-      },
-      "details": {
-        "en": "Bring nothing but yourself. We provide the grill, the meat, the drinks and the ball. Family and friends are welcome — just let us know numbers so we bring enough food.",
-        "ar": "لا تيب شي وياك، بس نفسك. إحنا نوفر الشوايه واللحم والمشروبات والطابة. الأهل والربع مرحبين — بس خبرونا بالعدد عشان نيب أكل كافي."
-      }
-    },
-    {
-      "id": "kuwait-national-day-2027",
-      "title": { "en": "Kuwait National Day Gala", "ar": "حفل العيد الوطني الكويتي" },
-      "date": "2027-02-25",
-      "start": "18:30",
-      "end": "23:00",
-      "venue": { "en": "Melbourne Town Hall", "ar": "قاعة بلدية ملبورن" },
-      "mapUrl": "https://maps.google.com/?q=Melbourne+Town+Hall",
+      "id": "kuwaiti-bazaar-2026",
+      "title": { "en": "Kuwaiti Bazaar", "ar": "البازار الكويتي" },
+      "date": "2026-05-16",
+      "start": "16:00",
+      "end": "21:00",
+      "venue": { "en": "Drill Hall, Melbourne", "ar": "دريل هول، ملبورن" },
+      "mapUrl": "",
       "category": "cultural",
-      "price": "$35",
-      "status": "open",
-      "featured": false,
-      "ticket": "https://kmss.sellfy.store/p/national-day-2027",
-      "image": "",
-      "album": "",
-      "summary": {
-        "en": "Our biggest night of the year. Kuwaiti food, live ardah, a photo wall and 300 people in one room celebrating home.",
-        "ar": "أكبر ليلة بالسنة. أكل كويتي، عرضة، وحائط تصوير، و٣٠٠ شخص بمكان واحد يحتفلون بالوطن."
-      },
-      "details": {
-        "en": "Dress code is national dress or formal. Tickets include a full dinner. Early-bird pricing closes two weeks before the event — buy early, this one sells out every year.",
-        "ar": "اللبس وطني أو رسمي. التذكرة تشمل عشاء كامل. سعر الحجز المبكر ينتهي قبل الحفل بأسبوعين — احجز بدري، كل سنة تخلص التذاكر."
-      }
-    },
-    {
-      "id": "study-jam-oct-2026",
-      "title": { "en": "Exam Season Study Jam", "ar": "جلسة مذاكرة قبل الاختبارات" },
-      "date": "2026-10-24",
-      "start": "10:00",
-      "end": "18:00",
-      "venue": { "en": "State Library Victoria, Study Room 3", "ar": "مكتبة ولاية فكتوريا، غرفة المذاكرة ٣" },
-      "mapUrl": "https://maps.google.com/?q=State+Library+Victoria",
-      "category": "academic",
-      "price": "Free",
+      "price": "",
       "status": "free",
       "featured": false,
       "ticket": "",
       "image": "",
       "album": "",
       "summary": {
-        "en": "Eight hours, unlimited coffee, and seniors from every major on hand to help. Bring your worst subject.",
-        "ar": "ثمان ساعات، قهوة ما تخلص، وطلبة متقدمين من كل التخصصات موجودين للمساعدة. يب أصعب مادة عندك."
+        "en": "A full afternoon of Kuwaiti stalls, food and small businesses — five hours of home in one hall.",
+        "ar": "عصرية كاملة من البسطات الكويتية والأكل والمشاريع الصغيرة — خمس ساعات من الديرة بقاعة وحدة."
       },
-      "details": {
-        "en": "Pomodoro blocks with breaks every 50 minutes. Snacks provided. Seats are limited so RSVP through the WhatsApp group.",
-        "ar": "مذاكرة على فترات مع استراحة كل ٥٠ دقيقة. توجد وجبات خفيفة. المقاعد محدودة، سجل من قروب الواتساب."
-      }
+      "details": { "en": "", "ar": "" }
     },
     {
-      "id": "great-ocean-road-2026",
-      "title": { "en": "Great Ocean Road Day Trip", "ar": "رحلة الطريق الساحلي العظيم" },
-      "date": "2026-11-08",
-      "start": "07:00",
-      "end": "20:00",
-      "venue": { "en": "Departs Southern Cross Station", "ar": "الانطلاق من محطة ساذرن كروس" },
-      "mapUrl": "https://maps.google.com/?q=Southern+Cross+Station+Melbourne",
-      "category": "trip",
-      "price": "$45",
-      "status": "soldout",
+      "id": "eid-celebration-2025",
+      "title": { "en": "Eid Celebration", "ar": "احتفال العيد" },
+      "date": "2025-03-30",
+      "start": "",
+      "end": "",
+      "venue": { "en": "", "ar": "" },
+      "mapUrl": "",
+      "category": "cultural",
+      "price": "",
+      "status": "free",
       "featured": false,
-      "ticket": "https://kmss.sellfy.store/p/great-ocean-road",
+      "ticket": "",
       "image": "",
       "album": "",
       "summary": {
-        "en": "Twelve Apostles, Loch Ard Gorge and a coach full of your people. Includes transport and lunch.",
-        "ar": "الرسل الاثنا عشر، ولوك آرد جورج، وباص مليان ربعك. يشمل المواصلات والغداء."
+        "en": "Our Eid al-Fitr gathering — everyone in their best, and a room that felt a lot like home.",
+        "ar": "تجمعنا بعيد الفطر — الكل بأحلى لبس، وقاعة حسيناها البيت."
       },
-      "details": {
-        "en": "Coach leaves at 7:00 sharp — we do not wait. Bring a jacket, the coast is cold even in November.",
-        "ar": "الباص يتحرك ٧:٠٠ بالضبط — ما ننتظر أحد. يب جاكيت، الساحل بارد حتى بنوفمبر."
-      }
+      "details": { "en": "", "ar": "" }
     },
 
     {
-      "id": "iftar-2026",
-      "title": { "en": "Community Iftar 2026", "ar": "إفطار الجمعية ٢٠٢٦" },
-      "date": "2026-03-14",
-      "start": "19:00",
-      "end": "22:00",
-      "venue": { "en": "Carlton Community Hall", "ar": "قاعة كارلتون المجتمعية" },
-      "mapUrl": "",
-      "category": "cultural",
-      "price": "Free",
-      "status": "free",
-      "featured": false,
-      "ticket": "",
-      "image": "",
-      "album": "",
-      "summary": {
-        "en": "180 students, one very long table, and machboos that tasted like home.",
-        "ar": "١٨٠ طالب، وطاولة وحدة طويلة، ومجبوس بطعم البيت."
-      },
-      "details": { "en": "", "ar": "" }
-    },
-    {
-      "id": "grad-dinner-2025",
-      "title": { "en": "Graduation Dinner 2025", "ar": "عشاء التخرج ٢٠٢٥" },
-      "date": "2025-12-06",
-      "start": "19:30",
-      "end": "23:30",
-      "venue": { "en": "Crown Promenade", "ar": "كراون بروميناد" },
-      "mapUrl": "",
-      "category": "social",
-      "price": "$60",
+      "id": "mt-buller-trip",
+      "title": { "en": "Mount Buller Trip", "ar": "رحلة جبل بولر" },
+      "date": "",
+      "start": "",
+      "end": "",
+      "venue": { "en": "Mount Buller, Victoria", "ar": "جبل بولر، فكتوريا" },
+      "mapUrl": "https://maps.google.com/?q=Mount+Buller+Victoria",
+      "category": "trip",
+      "price": "",
       "status": "open",
       "featured": false,
       "ticket": "",
       "image": "",
       "album": "",
       "summary": {
-        "en": "We sent off 41 graduates in style. Speeches, awards, and a dance floor that refused to close.",
-        "ar": "ودعنا ٤١ خريج بأحلى طريقة. كلمات وجوائز وحفلة ما بغت تخلص."
+        "en": "A day in the snow — for most of us the first time we'd ever seen it.",
+        "ar": "يوم بالثلج — وأغلبنا أول مرة يشوفه بحياته."
       },
       "details": { "en": "", "ar": "" }
     },
     {
-      "id": "football-cup-2025",
-      "title": { "en": "KMSS Football Cup", "ar": "كأس الجمعية لكرة القدم" },
-      "date": "2025-09-20",
-      "start": "09:00",
-      "end": "17:00",
-      "venue": { "en": "Melbourne Uni Sports Fields", "ar": "ملاعب جامعة ملبورن" },
+      "id": "padel-tournament",
+      "title": { "en": "Padel Tournament", "ar": "بطولة البادل" },
+      "date": "",
+      "start": "",
+      "end": "",
+      "venue": { "en": "", "ar": "" },
       "mapUrl": "",
       "category": "sports",
-      "price": "Free",
-      "status": "free",
+      "price": "",
+      "status": "open",
       "featured": false,
       "ticket": "",
       "image": "",
       "album": "",
       "summary": {
-        "en": "Eight teams, one trophy, and a penalty shootout nobody will ever let the losers forget.",
-        "ar": "ثمان فرق، وكأس واحد، وضربات ترجيح ما راح ينساها الخاسرين."
+        "en": "Our social padel tournament, with a $500 prize on the line.",
+        "ar": "بطولة البادل الاجتماعية، والجايزة ٥٠٠ دولار."
       },
       "details": { "en": "", "ar": "" }
     },
     {
-      "id": "orientation-2025",
-      "title": { "en": "New Student Orientation", "ar": "استقبال الطلبة الجدد" },
-      "date": "2025-02-22",
-      "start": "14:00",
-      "end": "17:00",
-      "venue": { "en": "Online + Melbourne CBD", "ar": "أونلاين + وسط ملبورن" },
+      "id": "cake-decorating-workshop",
+      "title": { "en": "Cake Decorating Workshop", "ar": "ورشة تزيين الكيك" },
+      "date": "",
+      "start": "11:00",
+      "end": "13:00",
+      "venue": { "en": "Home Cookery, The Glen", "ar": "هوم كوكري، ذا غلين" },
       "mapUrl": "",
-      "category": "academic",
-      "price": "Free",
+      "category": "social",
+      "price": "",
+      "status": "open",
+      "featured": false,
+      "ticket": "",
+      "image": "",
+      "album": "",
+      "summary": {
+        "en": "Two hours, a piping bag, and results that varied wildly.",
+        "ar": "ساعتين وكيس كريمة، والنتايج اختلفت وايد من واحد لواحد."
+      },
+      "details": { "en": "", "ar": "" }
+    },
+    {
+      "id": "arfaj",
+      "title": { "en": "Arfaj", "ar": "عرفج" },
+      "date": "",
+      "start": "",
+      "end": "",
+      "venue": { "en": "", "ar": "" },
+      "mapUrl": "",
+      "category": "cultural",
+      "price": "",
       "status": "free",
       "featured": false,
       "ticket": "",
       "image": "",
       "album": "",
       "summary": {
-        "en": "Bank accounts, Myki cards, phone plans and where to find halal meat — everything nobody tells you before you fly.",
-        "ar": "حسابات بنكية، وبطاقة مايكي، وخطوط تلفون، ووين تلاقي لحم حلال — كل شي ما أحد يخبرك فيه قبل ما تطير."
+        "en": "Named after Kuwait's national flower — our celebration of home, out here.",
+        "ar": "على اسم زهرة الكويت الوطنية — احتفالنا بالديرة، وإحنا بعيد عنها."
+      },
+      "details": { "en": "", "ar": "" }
+    },
+    {
+      "id": "kmss-x-zwara",
+      "title": { "en": "KMSS × Zwara", "ar": "الجمعية × زوارة" },
+      "date": "",
+      "start": "",
+      "end": "",
+      "venue": { "en": "", "ar": "" },
+      "mapUrl": "",
+      "category": "social",
+      "price": "",
+      "status": "free",
+      "featured": false,
+      "ticket": "",
+      "image": "",
+      "album": "",
+      "summary": {
+        "en": "A collaboration with Zwara — bringing a bit of the diwaniya to Melbourne.",
+        "ar": "تعاون مع زوارة — نيب شوي من جو الديوانية لملبورن."
       },
       "details": { "en": "", "ar": "" }
     }

@@ -73,7 +73,7 @@ after the `"events": [` line, put a comma after the closing `}`, then change the
 | Field | What to put |
 |---|---|
 | `id` | A short unique nickname, lowercase, no spaces: `iftar-2027`. Used in the web link. |
-| `date` | Always `YYYY-MM-DD`. **This is the only thing that decides whether an event is "upcoming" or "past"** — you never have to move events by hand. |
+| `date` | Always `YYYY-MM-DD`. **This is the only thing that decides whether an event is "upcoming" or "past"** — you never have to move events by hand. Leave it as `""` and the event stays a hidden draft (see below). |
 | `start` / `end` | 24-hour time, `18:30`. Leave `end` as `""` if unknown. |
 | `venue` | Where it is. |
 | `mapUrl` | Optional Google Maps link — adds an "Open in Maps" link. |
@@ -87,6 +87,16 @@ after the `"events": [` line, put a comma after the closing `}`, then change the
 | `summary` | One or two sentences shown on the card. |
 | `details` | Longer text shown in the pop-up. Can be `""`. |
 
+### Drafts: events you haven't scheduled yet
+
+An event with an empty date — `"date": ""` — **does not appear on the site at all.**
+That's how you park an idea: write the name and description now, leave the date
+blank, and fill it in when it's booked. The moment you add a real date it
+publishes itself.
+
+There are a few of these in the file already (Mount Buller, the padel tournament,
+the cake workshop, Arfaj, the Zwara collaboration). Add their dates and they go live.
+
 **You never delete past events.** Once the date passes, the event moves itself into
 the *Past events* archive, filed under its year. That archive is the point.
 
@@ -95,6 +105,28 @@ the *Past events* archive, filed under its year. That archive is the point.
 Every `{ "en": ..., "ar": ... }` pair is optional on the Arabic side. If you're in a
 rush, write English in both, or leave the Arabic as `""` — the site falls back to
 English automatically and nothing breaks.
+
+---
+
+## Updating the committee
+
+Open `data/team.json`. Each person is one block:
+
+```json
+{ "name": { "en": "Hussain Al-Baghli" },
+  "role": { "en": "President", "ar": "الرئيس" },
+  "group": "exec", "uni": "", "photo": "", "email": "" }
+```
+
+`group` decides which heading they appear under on the About page. Use one of:
+`exec`, `student`, `activities`, `sport`, `media`.
+
+`photo` can stay `""` — the site draws a navy circle with their initials, which
+looks tidy and means you never have to chase people for a headshot. To use real
+photos, upload them to `assets/img/team/` on github.com and write
+`"photo": "assets/img/team/hussain.jpg"`.
+
+Change `"year"` at the top when a new committee takes over.
 
 ---
 

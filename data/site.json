@@ -4,19 +4,18 @@
   "name":       { "en": "KMSS", "ar": "KMSS" },
   "fullName":   { "en": "Kuwait Melbourne Student Society", "ar": "الجمعية الكويتية لطلبة ملبورن" },
   "tagline":    { "en": "Your home away from home in Melbourne", "ar": "بيتك الثاني في ملبورن" },
-  "foundedYear": 2019,
+  "foundedYear": 2023,
   "city":       { "en": "Melbourne, Australia", "ar": "ملبورن، أستراليا" },
 
   "intro": {
-    "en": "KMSS brings Kuwaiti students in Melbourne together — through events, support and a community that has your back from the day you land to the day you graduate.",
-    "ar": "الجمعية الكويتية لطلبة ملبورن تجمع الطلبة الكويتيين في ملبورن من خلال الفعاليات والدعم ومجتمع يقف معك من أول يوم توصل فيه لين يوم تخرجك."
+    "en": "Since 2023, KMSS has brought Kuwaiti students in Melbourne together — through events, support and a community that has your back from the day you land to the day you graduate.",
+    "ar": "من ٢٠٢٣ والجمعية الكويتية لطلبة ملبورن تجمع الطلبة الكويتيين في ملبورن من خلال الفعاليات والدعم ومجتمع يقف معك من أول يوم توصل فيه لين يوم تخرجك."
   },
 
   "stats": [
-    { "value": "400+", "label": { "en": "Members",           "ar": "عضو" } },
-    { "value": "60+",  "label": { "en": "Events run",        "ar": "فعالية" } },
-    { "value": "8",    "label": { "en": "Partner universities", "ar": "جامعة شريكة" } },
-    { "value": "2019", "label": { "en": "Founded",           "ar": "تأسست" } }
+    { "value": "2023", "label": { "en": "Founded",                "ar": "تأسست" } },
+    { "value": "150+", "label": { "en": "At our biggest events",  "ar": "بأكبر فعالياتنا" } },
+    { "value": "14",   "label": { "en": "On the committee",       "ar": "عضو باللجنة" } }
   ],
 
   "_pillarsReadme": "The four boxes on the homepage under 'What we do'. Change the emoji, title and text freely.",
@@ -44,25 +43,25 @@
   ],
 
   "contact": {
-    "email": "hello@kmss.org.au",
-    "instagram": "https://instagram.com/kmss.melb",
-    "whatsapp": "https://chat.whatsapp.com/REPLACE-WITH-YOUR-INVITE",
+    "email": "kmss.ask@gmail.com",
+    "instagram": "https://instagram.com/kwt.mlb",
+    "whatsapp": "",
     "x": "",
-    "tiktok": "",
+    "tiktok": "https://tiktok.com/@kwt.mlb",
     "linkedin": "",
     "youtube": ""
   },
 
+
   "_sellfyReadme": "Tickets are sold on Sellfy. Put your Sellfy store URL here, then give each event its own sellfy link in events.json.",
-  "sellfyStore": "https://kmss.sellfy.store",
+  "sellfyStore": "https://kmss.sellfy.store/",
 
   "_joinFormReadme": "Free options for the 'Join us' form: (1) a Google Form link, or (2) a Formspree endpoint (formspree.io, free tier). Leave joinFormspree empty to use the Google Form link instead.",
   "joinFormUrl": "https://forms.gle/REPLACE-WITH-YOUR-FORM",
   "joinFormspree": "",
 
   "sponsors": [
-    { "name": "Kuwait Cultural Office — Canberra", "url": "https://www.kuwaitculture.org.au/" },
-    { "name": "Your sponsor here", "url": "" }
+    { "name": "Pinnacle Dental", "url": "" }
   ],
 
   "seo": {

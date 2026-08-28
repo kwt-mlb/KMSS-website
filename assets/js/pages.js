@@ -48,6 +48,8 @@
   }
 
   /* ---- about page ------------------------------------------------------- */
+  const TEAM_GROUPS = ['exec', 'student', 'activities', 'sport', 'media'];
+
   async function renderTeam() {
     const host = document.getElementById('team');
     if (!host) return;
@@ -58,17 +60,44 @@
     const yearHost = document.getElementById('team-year');
     if (yearHost && data.year) yearHost.textContent = data.year;
 
-    host.innerHTML = (data.members || []).map(m => {
+    const members = data.members || [];
+
+    function personCard(m, groupLabel) {
       const name = pick(m.name);
+      const role = pick(m.role);
+      // The group heading already says "Activities Committee" — don't repeat it
+      // under every face. Only show the role when it adds something.
+      const showRole = role && role !== groupLabel;
       const initials = name.split(/\s+/).slice(0, 2).map(w => w[0] || '').join('').toUpperCase();
       const avatar = m.photo
         ? `<img class="person__avatar" src="${esc(m.photo)}" alt="${esc(name)}" loading="lazy">`
         : `<div class="person__avatar" aria-hidden="true">${esc(initials)}</div>`;
       return `<div class="person reveal">${avatar}<b>${esc(name)}</b>
-        <span>${esc(pick(m.role))}</span>
+        ${showRole ? `<span>${esc(role)}</span>` : ''}
         ${m.uni ? `<small>${esc(m.uni)}</small>` : ''}
         ${m.email ? `<small><a href="mailto:${esc(m.email)}">${esc(m.email)}</a></small>` : ''}</div>`;
-    }).join('');
+    }
+
+    // Group members under their committee heading, keeping the order in the file.
+    // Anyone without a recognised group falls into a final "Committee" block.
+    const order = TEAM_GROUPS.filter(g => members.some(m => m.group === g));
+    const ungrouped = members.filter(m => !TEAM_GROUPS.includes(m.group));
+
+    if (!order.length) {
+      host.innerHTML = `<div class="people">${members.map(m => personCard(m, null)).join('')}</div>`;
+    } else {
+      host.innerHTML = order.map(g => {
+        const label = t(`team.${g}`);
+        return `<div class="team-group">
+          <h3 class="team-group__head">${esc(label)}</h3>
+          <div class="people">${members.filter(m => m.group === g).map(m => personCard(m, label)).join('')}</div>
+        </div>`;
+      }).join('') + (ungrouped.length ? `
+        <div class="team-group">
+          <h3 class="team-group__head">${esc(t('team.other'))}</h3>
+          <div class="people">${ungrouped.map(m => personCard(m, null)).join('')}</div>
+        </div>` : '');
+    }
     KMSS.watchReveals(host);
   }
 
