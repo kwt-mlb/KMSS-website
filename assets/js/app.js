@@ -271,7 +271,6 @@ const KMSS = (() => {
               <ul>
                 ${c.email ? `<li><a href="mailto:${esc(c.email)}">${esc(c.email)}</a></li>` : ''}
                 <li><a href="about.html#contact" data-i18n="about.contactTitle">${esc(t('about.contactTitle'))}</a></li>
-                <li><a href="https://github.com/kwt-mlb/KMSS-website" target="_blank" rel="noopener" data-i18n="foot.editedBy">${esc(t('foot.editedBy'))}</a></li>
               </ul>
             </div>
           </div>

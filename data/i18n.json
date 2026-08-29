@@ -112,7 +112,6 @@
   "foot.contact":  { "en": "Contact", "ar": "تواصل" },
   "foot.tickets":  { "en": "Tickets", "ar": "التذاكر" },
   "foot.rights":   { "en": "Run by students, for students.", "ar": "من الطلبة، للطلبة." },
-  "foot.editedBy": { "en": "Committee: edit this site", "ar": "للجنة: تعديل الموقع" },
 
   "err.data": { "en": "We couldn't load this section. Refresh the page, or let the committee know.", "ar": "ما قدرنا نحمّل هالقسم. حدّث الصفحة أو خبر اللجنة." },
 
