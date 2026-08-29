@@ -13,7 +13,7 @@
   "members": [
     { "name": { "en": "Hussain Albaghli", "ar": "حسين البغلي" },      "role": { "en": "President",  "ar": "الرئيس" },        "group": "exec",       "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Fatemah Alkandari", "ar": "فاطمة الكندري" },     "role": { "en": "Vice President", "ar": "نائب الرئيس" }, "group": "exec",     "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Zeyad Khalaf", "ar": "زياد خلف" },           "role": { "en": "Committee Coordinator", "ar": "امين عام" }, "group": "exec", "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Zeyad Khalaf", "ar": "زياد خلف" },           "role": { "en": "Committee Coordinator", "ar": "أمين العام" }, "group": "exec", "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Abdulrahman Almansouri", "ar": "عبدالرحمن المنصوري" },"role": { "en": "Treasurer",  "ar": "أمين الصندوق" },  "group": "exec",       "uni": "", "photo": "", "email": "" },
 
     { "name": { "en": "Abdulrahman Alshlash", "ar": "عبدالرحمن الشلاش" },   "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
