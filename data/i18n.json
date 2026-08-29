@@ -4,6 +4,7 @@
   "nav.home":     { "en": "Home",            "ar": "الرئيسية" },
   "nav.events":   { "en": "Events",          "ar": "الفعاليات" },
   "nav.guide":    { "en": "Melbourne Guide", "ar": "دليل ملبورن" },
+  "nav.store":    { "en": "Store",           "ar": "المتجر" },
   "nav.about":    { "en": "About",           "ar": "عن الجمعية" },
   "nav.join":     { "en": "Join us",         "ar": "انضم لنا" },
   "nav.menu":     { "en": "Menu",            "ar": "القائمة" },
@@ -110,7 +111,6 @@
   "foot.explore":  { "en": "Explore", "ar": "تصفح" },
   "foot.community":{ "en": "Community", "ar": "المجتمع" },
   "foot.contact":  { "en": "Contact", "ar": "تواصل" },
-  "foot.tickets":  { "en": "Tickets", "ar": "التذاكر" },
   "foot.rights":   { "en": "Run by students, for students.", "ar": "من الطلبة، للطلبة." },
 
   "err.data": { "en": "We couldn't load this section. Refresh the page, or let the committee know.", "ar": "ما قدرنا نحمّل هالقسم. حدّث الصفحة أو خبر اللجنة." },

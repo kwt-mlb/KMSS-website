@@ -202,7 +202,10 @@ const KMSS = (() => {
             <span class="brand__text">${esc(pick(s.name) || 'KMSS')}<small>${esc(pick(s.fullName) || '')}</small></span>
           </a>
           <nav class="nav__links" id="nav-links" aria-label="Main">
-            ${NAV.map(n => `<a class="nav__link ${page === n.href.replace('.html', '') ? 'is-active' : ''}" href="${n.href}" data-i18n="${n.key}">${esc(t(n.key))}</a>`).join('')}
+            ${NAV.flatMap(n => n.key === 'nav.guide' && s.sellfyStore
+                ? [n, { key: 'nav.store', href: s.sellfyStore, external: true }]
+                : [n])
+              .map(n => `<a class="nav__link ${page === n.href.replace('.html', '') ? 'is-active' : ''}" href="${esc(n.href)}" data-i18n="${n.key}"${n.external ? ' target="_blank" rel="noopener"' : ''}>${esc(t(n.key))}</a>`).join('')}
             <a class="btn btn--primary btn--sm" href="about.html#join" data-i18n="nav.join" style="margin-inline-start:8px">${esc(t('nav.join'))}</a>
           </nav>
           <div class="nav__tools">
@@ -262,7 +265,7 @@ const KMSS = (() => {
               <ul>
                 <li><a href="about.html#join" data-i18n="nav.join">${esc(t('nav.join'))}</a></li>
                 ${c.whatsapp && !c.whatsapp.includes('REPLACE') ? `<li><a href="${esc(c.whatsapp)}" target="_blank" rel="noopener" data-i18n="join.wa">${esc(t('join.wa'))}</a></li>` : ''}
-                ${s.sellfyStore ? `<li><a href="${esc(s.sellfyStore)}" target="_blank" rel="noopener" data-i18n="foot.tickets">${esc(t('foot.tickets'))}</a></li>` : ''}
+                ${s.sellfyStore ? `<li><a href="${esc(s.sellfyStore)}" target="_blank" rel="noopener" data-i18n="nav.store">${esc(t('nav.store'))}</a></li>` : ''}
                 <li><a href="guide.html" data-i18n="nav.guide">${esc(t('nav.guide'))}</a></li>
               </ul>
             </div>
