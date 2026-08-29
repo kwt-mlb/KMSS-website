@@ -16,7 +16,7 @@
     { "name": { "en": "Abdulrahman Al-Mansouri" },"role": { "en": "Treasurer",  "ar": "أمين الصندوق" },  "group": "exec",       "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Zeyad Khalaf" },           "role": { "en": "Committee Coordinator", "ar": "منسق اللجان" }, "group": "exec", "uni": "", "photo": "", "email": "" },
 
-    { "name": { "en": "Metab Al-Enezi" },         "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Mohammad Alshakhs" },      "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Abdulrahman Alshlash" },   "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
 
     { "name": { "en": "Hawraa Alhassan" },        "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
@@ -28,6 +28,6 @@
     { "name": { "en": "Jassem Aldurea" },         "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
 
     { "name": { "en": "Ayah Khourshed" },         "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Ahmed Aldaihani" },        "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" }
+    { "name": { "en": "Latifa Alkharji" },        "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" }
   ]
 }
