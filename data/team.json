@@ -11,7 +11,7 @@
   ],
   "year": "2026",
   "members": [
-    { "name": { "en": "Hussain Albaghli", "ar": "حسين الباغلي" },      "role": { "en": "President",  "ar": "الرئيس" },        "group": "exec",       "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Hussain Albaghli", "ar": "حسين البغلي" },      "role": { "en": "President",  "ar": "الرئيس" },        "group": "exec",       "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Fatemah Alkandari", "ar": "فاطمة الكندري" },     "role": { "en": "Vice President", "ar": "نائب الرئيس" }, "group": "exec",     "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Zeyad Khalaf", "ar": "زياد خلف" },           "role": { "en": "Committee Coordinator", "ar": "امين عام" }, "group": "exec", "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Abdulrahman Almansouri", "ar": "عبدالرحمن المنصوري" },"role": { "en": "Treasurer",  "ar": "أمين الصندوق" },  "group": "exec",       "uni": "", "photo": "", "email": "" },
@@ -28,6 +28,6 @@
     { "name": { "en": "Jassem Aldurea", "ar": "جاسم الدرعي" },         "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
 
     { "name": { "en": "Ayah Khourshed", "ar": "آية خورشيد" },         "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Latifa Alkharji", "ar": "لطيفة الخرجي" },        "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" }
+    { "name": { "en": "Latifa Alkharji", "ar": "لطيفة الكرجي" },        "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" }
   ]
 }
