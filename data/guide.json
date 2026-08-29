@@ -300,17 +300,6 @@
             { "en": "Always compare the RATE, not the fee. A '$0 fee' transfer usually hides 3% in the rate.", "ar": "قارن سعر الصرف مو الرسوم. تحويل 'بدون رسوم' عادة يخبي ٣٪ بسعر الصرف." }
           ],
           "links": []
-        },
-        {
-          "title": { "en": "Working while you study", "ar": "الشغل أثناء الدراسة" },
-          "body": {
-            "en": "Student visas allow limited work hours per fortnight during semester and unlimited during official breaks — check the current cap on the Home Affairs site, it changes. You need a Tax File Number (free, apply online) before your first payslip.",
-            "ar": "تأشيرة الطالب تسمح بساعات عمل محدودة كل أسبوعين خلال الترم، وبدون حد خلال الإجازات الرسمية — راجع الحد الحالي بموقع الهجرة لأنه يتغير. تحتاج رقم ضريبي (TFN) مجاني وتطلبه أونلاين قبل أول راتب."
-          },
-          "points": [
-            { "en": "Minimum wage is legally enforced. If you are offered $15/hour cash, that is illegal — not a favour.", "ar": "الحد الأدنى للأجور مطبّق قانونياً. إذا أحد عرض عليك ١٥ دولار بالساعة كاش، هذا غير قانوني — مو معروف." }
-          ],
-          "links": [{ "label": "Home Affairs", "url": "https://immi.homeaffairs.gov.au/" }]
         }
       ]
     },
