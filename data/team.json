@@ -13,11 +13,11 @@
   "members": [
     { "name": { "en": "Hussain Al-Baghli" },      "role": { "en": "President",  "ar": "الرئيس" },        "group": "exec",       "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Fatemah Al-Kandari" },     "role": { "en": "Vice President", "ar": "نائب الرئيس" }, "group": "exec",     "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Zeyad Khalaf" },           "role": { "en": "Committee Coordinator", "ar": "امين عام" }, "group": "exec", "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Abdulrahman Al-Mansouri" },"role": { "en": "Treasurer",  "ar": "أمين الصندوق" },  "group": "exec",       "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Zeyad Khalaf" },           "role": { "en": "Committee Coordinator", "ar": "منسق اللجان" }, "group": "exec", "uni": "", "photo": "", "email": "" },
 
-    { "name": { "en": "Mohammad Alshakhs" },      "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Abdulrahman Alshlash" },   "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Mohammad Alshakhs" },      "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
 
     { "name": { "en": "Hawraa Alhassan" },        "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Latifa Alenezi" },         "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },

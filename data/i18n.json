@@ -91,7 +91,7 @@
   "about.faqTitle":    { "en": "Frequently asked", "ar": "الأسئلة الشائعة" },
   "about.contactTitle":{ "en": "Get in touch", "ar": "تواصل معنا" },
 
-  "team.exec":       { "en": "Executive",            "ar": "اللجنة التنفيذية" },
+  "team.exec":       { "en": "Administration",       "ar": "الإدارة" },
   "team.student":    { "en": "Student Committee",    "ar": "لجنة الطلبة" },
   "team.activities": { "en": "Activities Committee", "ar": "لجنة النشاطات" },
   "team.sport":      { "en": "Sport Committee",      "ar": "اللجنة الرياضية" },
