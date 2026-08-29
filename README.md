@@ -81,14 +81,21 @@ docs/               How to edit · yearly handover
 3. **Source:** *Deploy from a branch* → **Branch:** `main` → **Folder:** `/ (root)` → **Save**.
 4. Wait a minute. The site is live at `https://kwt-mlb.github.io/KMSS-website/`.
 
-### Using your own domain (optional, ~$15/year)
+### Custom domain: kmss.online
 
-1. Buy a domain (e.g. `kmss.org.au`).
-2. Create a file called `CNAME` in the root of this repository containing just the
-   domain, e.g. `kmss.org.au`.
-3. At your domain registrar, point the DNS at GitHub Pages
-   ([instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
-4. Back in Settings → Pages, tick **Enforce HTTPS**.
+This site uses `kmss.online` (bought on Namecheap) instead of the default
+`github.io` address. The `CNAME` file in the repo root already points to it —
+if you ever need to redo this from scratch:
+
+1. Repository → Settings → Pages → **Custom domain** → enter `kmss.online` → Save
+   (this recreates the `CNAME` file).
+2. At Namecheap → Domain List → `kmss.online` → **Manage** → **Advanced DNS**,
+   add:
+   - Four **A records** (host `@`) pointing to `185.199.108.153`,
+     `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - One **CNAME record** (host `www`) pointing to `kwt-mlb.github.io`
+3. Back in Settings → Pages, tick **Enforce HTTPS** once GitHub finishes
+   verifying the domain (can take up to 24 hours after DNS propagates).
 
 ## Working on it locally
 

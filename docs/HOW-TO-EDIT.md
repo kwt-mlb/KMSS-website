@@ -206,6 +206,9 @@ your change and an email telling you which file and what's wrong.
 
 ## Where the site lives
 
-- **Live site:** see Settings → Pages in the repository for the address.
+- **Live site:** <https://kmss.online>
 - **Source:** <https://github.com/kwt-mlb/KMSS-website>
-- **Cost:** $0. GitHub Pages is free for public repositories, forever.
+- **Cost:** GitHub Pages hosting is $0, forever, for public repositories.
+  The `kmss.online` domain is a paid yearly renewal through Namecheap —
+  whoever holds committee treasurer duties should keep an eye on that
+  renewal each year so the site doesn't go offline.
