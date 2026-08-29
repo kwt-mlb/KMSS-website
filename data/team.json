@@ -11,23 +11,23 @@
   ],
   "year": "2026",
   "members": [
-    { "name": { "en": "Hussain Al-Baghli" },      "role": { "en": "President",  "ar": "الرئيس" },        "group": "exec",       "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Fatemah Al-Kandari" },     "role": { "en": "Vice President", "ar": "نائب الرئيس" }, "group": "exec",     "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Zeyad Khalaf" },           "role": { "en": "Committee Coordinator", "ar": "امين عام" }, "group": "exec", "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Abdulrahman Al-Mansouri" },"role": { "en": "Treasurer",  "ar": "أمين الصندوق" },  "group": "exec",       "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Hussain Albaghli", "ar": "حسين الباغلي" },      "role": { "en": "President",  "ar": "الرئيس" },        "group": "exec",       "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Fatemah Alkandari", "ar": "فاطمة الكندري" },     "role": { "en": "Vice President", "ar": "نائب الرئيس" }, "group": "exec",     "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Zeyad Khalaf", "ar": "زياد خلف" },           "role": { "en": "Committee Coordinator", "ar": "امين عام" }, "group": "exec", "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Abdulrahman Almansouri", "ar": "عبدالرحمن المنصوري" },"role": { "en": "Treasurer",  "ar": "أمين الصندوق" },  "group": "exec",       "uni": "", "photo": "", "email": "" },
 
-    { "name": { "en": "Abdulrahman Alshlash" },   "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Mohammad Alshakhs" },      "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Abdulrahman Alshlash", "ar": "عبدالرحمن الشلاش" },   "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Mohammad Alshakhs", "ar": "محمد الشخص" },      "role": { "en": "Student Committee", "ar": "لجنة الطلبة" },   "group": "student",    "uni": "", "photo": "", "email": "" },
 
-    { "name": { "en": "Hawraa Alhassan" },        "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Latifa Alenezi" },         "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Abdullah Alaradi" },       "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Khaled Khalifouh" },       "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Hawraa Alhassan", "ar": "حوراء الحسن" },        "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Latifa Alenezi", "ar": "لطيفة العنزي" },         "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Abdullah Alaradi", "ar": "عبدالله العرادي" },       "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Khaled Khalifouh", "ar": "خالد خليفوه" },       "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
 
-    { "name": { "en": "Adel Bin Hussain" },       "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Jassem Aldurea" },         "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Adel Bin Hussain", "ar": "عادل بن حسين" },       "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Jassem Aldurea", "ar": "جاسم الدرعي" },         "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
 
-    { "name": { "en": "Ayah Khourshed" },         "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Latifa Alkharji" },        "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" }
+    { "name": { "en": "Ayah Khourshed", "ar": "آية خورشيد" },         "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Latifa Alkharji", "ar": "لطيفة الخرجي" },        "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" }
   ]
 }
