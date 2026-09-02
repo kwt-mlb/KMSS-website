@@ -25,7 +25,7 @@
     { "name": { "en": "Khaled Khalifouh", "ar": "خالد خليفوه" },       "role": { "en": "Activities Committee", "ar": "لجنة النشاطات" }, "group": "activities", "uni": "", "photo": "", "email": "" },
 
     { "name": { "en": "Adel Bin Hussain", "ar": "عادل بن حسين" },       "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
-    { "name": { "en": "Jassem Aldurea", "ar": "جاسم الدرعي" },         "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
+    { "name": { "en": "Jassem Aldurea", "ar": "جاسم الدريع" },         "role": { "en": "Sport Committee", "ar": "اللجنة الرياضية" }, "group": "sport",  "uni": "", "photo": "", "email": "" },
 
     { "name": { "en": "Ayah Khourshed", "ar": "آية خورشيد" },         "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" },
     { "name": { "en": "Latifa Alkharji", "ar": "لطيفة الكرجي" },        "role": { "en": "Media Committee", "ar": "اللجنة الإعلامية" }, "group": "media", "uni": "", "photo": "", "email": "" }
